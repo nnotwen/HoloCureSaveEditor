@@ -1,0 +1,210 @@
+<!doctype html>
+<html lang="en" data-bs-theme="dark">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>HoloCure Save Editor</title>
+
+		<link rel="stylesheet" href="/src/styles/main.css" />
+		<script type="module" src="/src/main.ts"></script>
+
+		<!-- Fallback for old IE -->
+		<link rel="shortcut icon" href="/favicons/favicon.ico" type="image/x-icon" />
+
+		<!-- Standard favicon -->
+		<link rel="icon" href="/favicons/icon-16.png" sizes="16x16" type="image/png" />
+		<link rel="icon" href="/favicons/icon-32.png" sizes="32x32" type="image/png" />
+		<link rel="icon" href="/favicons/icon-48.png" sizes="48x48" type="image/png" />
+		<link rel="icon" href="/favicons/icon-64.png" sizes="64x64" type="image/png" />
+		<link rel="icon" href="/favicons/icon-96.png" sizes="96x96" type="image/png" />
+		<link rel="icon" href="/favicons/icon-128.png" sizes="128x128" type="image/png" />
+		<link rel="icon" href="/favicons/icon-256.png" sizes="256x256" type="image/png" />
+		<link rel="icon" href="/favicons/icon-512.png" sizes="512x512" type="image/png" />
+	</head>
+	<body class="tw:min-h-screen tw:flex tw:flex-col">
+		<nav class="navbar bg-body-tertiary sticky-top">
+			<div class="container-fluid">
+				<a class="navbar-brand" href="#">
+					<img class="tw:h-12" src="/images/game-logo-360.webp" alt="Game Logo" />
+				</a>
+			</div>
+		</nav>
+		<main class="tw:flex-1 tw:mx-2"></main>
+		<footer class="tw:mt-8 tw:pt-8 tw:pb-6 tw:bg-gray-950/70">
+			<div class="container tw:mx-auto tw:px-4">
+				<div class="row g-4 tw:mb-5">
+					<div class="col-12 col-md-6 col-lg-4">
+						<h6 class="tw:text-sm tw:font-semibold tw:flex tw:items-center tw:gap-2 tw:uppercase tw:tracking-wider tw:text-gray-400 tw:mb-3">
+							<i class="bi bi-shield-exclamation"></i>
+							Disclaimer
+						</h6>
+						<p class="tw:text-sm tw:text-gray-400 tw:leading-relaxed">
+							<span class="tw:font-medium">Kay Yu</span> has no involvement in nor endorses this tool. This is a fan-made project. All game data, characters,
+							and assets belong to their respective owners.
+						</p>
+					</div>
+					<div class="col-12 col-md-6 col-lg-4">
+						<h6 class="tw:text-sm tw:font-semibold tw:flex tw:items-center tw:gap-2 tw:uppercase tw:tracking-wider tw:text-gray-400 tw:mb-3">
+							<i class="bi bi-heart-fill text-danger"></i>
+							Acknowledgements
+						</h6>
+						<ul class="tw:list-none! tw:ps-6! tw:text-sm tw:text-gray-400">
+							<li class="tw:flex gap-2 tw:mb-2">
+								<i class="bi bi-person-circle tw:shrink-0"></i>
+								<span
+									><a class="tw:font-medium tw:no-underline! tw:hover:underline! tw:text-gray-400!" href="https://x.com/holocuredev" target="_blank">Kay Yu</a>
+									— HoloCure developer</span
+								>
+							</li>
+							<li class="tw:flex gap-2 tw:mb-2">
+								<i class="bi bi-wikipedia tw:shrink-0"></i>
+								<span
+									><a class="tw:font-medium tw:no-underline! tw:hover:underline! tw:text-gray-400!" href="https://holocure.wiki.gg/" target="_blank"
+										>HoloCure Wiki</a
+									>
+									— asset source</span
+								>
+							</li>
+							<li class="tw:flex gap-2">
+								<i class="bi bi-stars tw:shrink-0"></i>
+								<span
+									><a class="tw:font-medium tw:no-underline! tw:hover:underline! tw:text-gray-400!" href="https://cover-corp.com/en/company" target="_blank"
+										>Cover Corp</a
+									>
+									— Hololive talents</span
+								>
+							</li>
+						</ul>
+					</div>
+					<div class="col-12 col-md-6 col-lg-4">
+						<h6 class="tw:text-sm tw:font-semibold tw:flex tw:items-center tw:gap-2 tw:uppercase tw:tracking-wider tw:text-gray-400 tw:mb-3">
+							<i class="bi bi-images"></i>
+							Assets
+						</h6>
+						<p class="tw:text-sm tw:text-gray-400 tw:leading-relaxed tw:mb-3">
+							Icons and assets sourced from the HoloCure Wiki. This tool is open source and not for commercial use.
+						</p>
+					</div>
+				</div>
+				<div class="row align-items-center g-3 pt-4 border-top border-gray-200 dark:border-gray-800">
+					<div class="col-12 col-md-4 text-center text-md-start">
+						<p class="small text-gray-500 dark:text-gray-500 mb-0">© <span class="current-year"></span> HoloCure Save Editor</p>
+					</div>
+					<div class="col-12 col-md-4 text-center">
+						<div class="d-flex justify-content-center gap-4 small">
+							<span data-bs-toggle="modal" data-bs-target="#privacyModal" class="tw:text-blue-300 tw:cursor-pointer tw:hover:underline">
+								<i class="bi bi-shield-check me-1"></i>Privacy
+							</span>
+							<span data-bs-toggle="modal" data-bs-target="#termsModal" class="tw:text-blue-300 tw:cursor-pointer tw:hover:underline">
+								<i class="bi bi-file-earmark-text me-1"></i>Terms
+							</span>
+							<a href="#" target="_blank" class="tw:text-blue-300! tw:no-underline! tw:hover:underline!"> <i class="bi bi-github me-1"></i>Source </a>
+						</div>
+					</div>
+					<div class="col-12 col-md-4 text-center text-md-end">
+						<span class="small text-gray-400 bg-gray-100 dark:bg-gray-800 px-2 py-1 rounded-pill d-inline-block"> v1.0.0 </span>
+					</div>
+				</div>
+				<div class="row d-md-none mt-4">
+					<div class="col-12">
+						<p class="text-xs text-gray-400 text-center fst-italic mb-0">Not affiliated with Kay Yu or Cover Corp. Backup your saves.</p>
+					</div>
+				</div>
+			</div>
+		</footer>
+		<div class="modal fade" id="privacyModal" tabindex="-1" aria-labelledby="privacyModalLabel" aria-hidden="true">
+			<div class="modal-dialog modal-dialog-scrollable">
+				<div class="modal-content tw:bg-gray-900!">
+					<div class="modal-header">
+						<h5 class="modal-title" id="privacyModalLabel">Privacy Policy</h5>
+						<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+					</div>
+					<div class="modal-body">
+						<div class="mb-4">
+							<h3 class="h6 fw-bold">Data Collection</h3>
+							<p class="small tw:text-gray-400">
+								This tool does not collect, store, or transmit any personal data. All save file processing happens entirely in your browser, meaning no files
+								are uploaded to any server.
+							</p>
+						</div>
+						<div class="mb-4">
+							<h3 class="h6 fw-bold">Local Storage</h3>
+							<p class="small tw:text-gray-400">
+								Snapshots you create are stored locally in your browser's IndexedDB. This data never leaves your device and can be cleared at any time through
+								your browser settings.
+							</p>
+						</div>
+						<div class="mb-4">
+							<h3 class="h6 fw-bold">Third-Party Services</h3>
+							<p class="small tw:text-gray-400">
+								This tool uses no analytics, tracking cookies, or external services and does not load any external resources or connect to any third-party
+								services. All libraries are bundled locally and run entirely in your browser. No data is sent to any external servers.
+							</p>
+						</div>
+						<div class="mb-4">
+							<h3 class="h6 fw-bold">Your Rights</h3>
+							<p class="small tw:text-gray-400">
+								Since no data is collected, there's nothing to request, modify, or delete. All your save data remains under your control on your own device.
+							</p>
+						</div>
+						<p class="small tw:text-gray-400 fst-italic mt-4">Last updated: <span data-luxon-timestamp="1771470526818"></span></p>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="modal fade" id="termsModal" tabindex="-1" aria-labelledby="termsModalLabel" aria-hidden="true">
+			<div class="modal-dialog modal-dialog-scrollable">
+				<div class="modal-content tw:bg-gray-900!">
+					<div class="modal-header">
+						<h5 class="modal-title" id="termsModalLabel">Terms of Use</h5>
+						<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+					</div>
+					<div class="modal-body">
+						<div class="mb-4">
+							<h3 class="h6 fw-bold">Fan Project Disclaimer</h3>
+							<p class="small tw:text-gray-400">
+								This is an unofficial fan-made tool for HoloCure. It is not affiliated with, endorsed by, or connected to Kay Yu or Cover Corp. All game
+								assets and trademarks belong to their respective owners.
+							</p>
+						</div>
+						<div class="mb-4">
+							<h3 class="h6 fw-bold">Use at Your Own Risk</h3>
+							<p class="small tw:text-gray-400">
+								This tool modifies save files. While designed to be safe, there is always a risk of data loss or corruption. Always keep backups of your
+								original save files. The developers assume no responsibility for any damage or loss.
+							</p>
+						</div>
+						<div class="mb-4">
+							<h3 class="h6 fw-bold">No Warranty</h3>
+							<p class="small tw:text-gray-400">
+								This software is provided "as is" without any warranties, express or implied. We do not guarantee that it will work correctly with all game
+								versions or save file formats.
+							</p>
+						</div>
+						<div class="mb-4">
+							<h3 class="h6 fw-bold">Acceptable Use</h3>
+							<p class="small tw:text-gray-400">
+								You may use this tool for personal, non-commercial purposes. Do not redistribute modified versions without credit. Do not use this tool to
+								create or distribute malicious content.
+							</p>
+						</div>
+						<div class="mb-4">
+							<h3 class="h6 fw-bold">Game Version Compatibility</h3>
+							<p class="small tw:text-gray-400">
+								This tool is designed for HoloCure version 0.7 and above. Older save formats may not be fully compatible. Always check that your edited save
+								works in your game version.
+							</p>
+						</div>
+						<div class="mb-4">
+							<h3 class="h6 fw-bold">Changes to Terms</h3>
+							<p class="small tw:text-gray-400">
+								We reserve the right to update these terms as needed. Continued use of the tool constitutes acceptance of any changes.
+							</p>
+						</div>
+						<p class="small tw:text-gray-400 fst-italic mt-4">Last updated: <span data-luxon-timestamp="1771470526818"></span></p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</body>
+</html>

@@ -1,0 +1,38 @@
+{
+	"name": "holocuresaveeditor",
+	"version": "1.0.0",
+	"description": "HoloCure Save Editor",
+	"license": "ISC",
+	"author": "nnotwen",
+	"type": "module",
+	"main": "index.js",
+	"scripts": {
+		"dev": "vite",
+		"build": "vite build",
+		"preview": "vite preview",
+		"lint": "eslint . --ext .ts",
+		"format": "prettier --write ."
+	},
+	"devDependencies": {
+		"@types/bootstrap": "^5.2.10",
+		"@types/jquery": "^3.5.33",
+		"@types/luxon": "^3.7.1",
+		"@typescript-eslint/eslint-plugin": "^8.54.0",
+		"@typescript-eslint/parser": "^8.54.0",
+		"eslint": "^9.39.2",
+		"prettier": "^3.8.1",
+		"typescript": "^5.9.3",
+		"vite": "^7.3.1"
+	},
+	"dependencies": {
+		"@andypf/json-viewer": "^2.2.0",
+		"@popperjs/core": "^2.11.8",
+		"@tailwindcss/vite": "^4.1.18",
+		"bootstrap": "^5.3.8",
+		"bootstrap-icons": "^1.13.1",
+		"jquery": "^4.0.0",
+		"luxon": "^3.7.2",
+		"tailwindcss": "^4.1.18",
+		"tom-select": "^2.5.1"
+	}
+}

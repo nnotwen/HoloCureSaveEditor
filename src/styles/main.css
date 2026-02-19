@@ -1,0 +1,28 @@
+@import "bootstrap/dist/css/bootstrap.min.css";
+@import "bootstrap-icons/font/bootstrap-icons.css";
+@import "tom-select/dist/css/tom-select.bootstrap5.css";
+@import "tailwindcss" prefix(tw);
+
+input::-webkit-inner-spin-button,
+input::-webkit-outer-spin-button {
+	-webkit-appearance: none;
+	margin: 0;
+}
+
+/*  */
+/* .form-floating input:not(:placeholder-shown) ~ .form-floating-icon, */
+/* hide when not in focus */
+.form-floating input:not(:focus):placeholder-shown ~ .form-floating-icon {
+	opacity: 0;
+}
+
+.tooltip[data-bs-theme="dark"] .tooltip-inner,
+.tooltip .tooltip-inner {
+	background-color: unset;
+	color: unset;
+}
+
+.tooltip .tooltip-arrow::before {
+	border-top-color: unset;
+	border-bottom-color: unset;
+}
