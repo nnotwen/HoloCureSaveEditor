@@ -707,7 +707,7 @@
 		"key": "jackpot",
 		"type": "General",
 		"label": "5% of Gamblers",
-		"icon": "./gameicons/achievements/5%_of_Gamblers_Icon.webp",
+		"icon": "./gameicons/achievements/5%25_of_Gamblers_Icon.webp",
 		"desc": "Win a Jackpot in slots",
 		"reward": { "name": "HoloCoins", "value": 3000 }
 	},
