@@ -1,0 +1,1610 @@
+[
+	{
+		"key": "1hard",
+		"type": "General",
+		"label": "Thousand Mile Stare",
+		"icon": "./gameicons/achievements/Thousand_Mile_Stare_Icon.webp",
+		"desc": "Defeat the Boss of Stage 1 Hard",
+		"reward": { "name": "HoloCoins", "value": 10000 }
+	},
+	{
+		"key": "2hard",
+		"type": "General",
+		"label": "Thank the Managers",
+		"icon": "./gameicons/achievements/Thank_the_Managers_Icon.webp",
+		"desc": "Defeat the Boss of Stage 2 Hard",
+		"reward": { "name": "HoloCoins", "value": 10000 }
+	},
+	{
+		"key": "3hard",
+		"type": "General",
+		"label": "All Outta Candy",
+		"icon": "./gameicons/achievements/All_Outta_Candy_Icon.webp",
+		"desc": "Defeat the Boss of Stage 3 Hard",
+		"reward": { "name": "HoloCoins", "value": 10000 }
+	},
+	{
+		"key": "4hard",
+		"type": "General",
+		"label": "Dah Lah",
+		"icon": "./gameicons/achievements/Dah_Lah_Icon.webp",
+		"desc": "Defeat the Boss of Stage 4 Hard",
+		"reward": { "name": "HoloCoins", "value": 10000 }
+	},
+	{
+		"key": "50hamburgers",
+		"type": "General",
+		"label": "Hamburger Country Yeah!",
+		"icon": "./gameicons/achievements/Hamburger_Country_Yeah!_Icon.webp",
+		"desc": "Eat over 50 hamburgers in one game",
+		"reward": { "name": "HoloCoins", "value": 500 }
+	},
+	{
+		"key": "1000damage",
+		"type": "General",
+		"label": "Thousand Milestone!",
+		"icon": "./gameicons/achievements/Thousand_Milestone!_Icon.webp",
+		"desc": "Deal over 1,000 damage in one attack",
+		"reward": { "name": "Devil Hat", "value": 1 }
+	},
+	{
+		"key": "10000damage",
+		"type": "General",
+		"label": "Over Nine Thousand?!",
+		"icon": "./gameicons/achievements/Over_Nine_Thousand_!_Icon.webp",
+		"desc": "Deal over 10,000 damage in one attack",
+		"reward": { "name": "HoloCoins", "value": 2000 }
+	},
+	{
+		"key": "akiClear",
+		"type": "Character",
+		"label": "Alona!",
+		"icon": "./gameicons/achievements/Aik_Awakened_Icon.webp",
+		"desc": "Clear a game of Stage Mode with Aki Rosenthal",
+		"reward": { "name": "HoloCoins", "value": 500 }
+	},
+	{
+		"key": "akiGachikoi",
+		"type": "Character",
+		"label": "True Rosetai",
+		"icon": "./gameicons/achievements/Gachikoi_Achievement_Icon.webp",
+		"desc": "Reach Gachikoi Fandom level for Aki Rosenthal",
+		"reward": { "name": "HoloCoins", "value": 3000 }
+	},
+	{
+		"key": "allcomplete",
+		"type": "General",
+		"label": "Get Some Help",
+		"icon": "./gameicons/achievements/Get_Some_Help.webp",
+		"desc": "Complete all achievements. Then go outside.",
+		"reward": { "name": "HoloCoins", "value": 10000 }
+	},
+	{
+		"key": "ameClear",
+		"type": "Character",
+		"label": "*HIC*",
+		"icon": "./gameicons/achievements/Pistol_Shot_Awakened_Icon.webp",
+		"desc": "Clear a game of Stage Mode with Amelia Watson",
+		"reward": { "name": "HoloCoins", "value": 500 }
+	},
+	{
+		"key": "ameGachikoi",
+		"type": "Character",
+		"label": "True Tea-mate",
+		"icon": "./gameicons/achievements/Gachikoi_Achievement_Icon.webp",
+		"desc": "Reach Gachikoi Fandom level for Amelia Watson",
+		"reward": { "name": "HoloCoins", "value": 3000 }
+	},
+	{
+		"key": "anyaClear",
+		"type": "Character",
+		"label": "Otsukeris~",
+		"icon": "./gameicons/achievements/Keris_Awakened_Icon.webp",
+		"desc": "Clear a game of Stage Mode with Anya Melfissa",
+		"reward": { "name": "HoloCoins", "value": 500 }
+	},
+	{
+		"key": "anyaGachikoi",
+		"type": "Character",
+		"label": "True Melfriend",
+		"icon": "./gameicons/achievements/Gachikoi_Achievement_Icon.webp",
+		"desc": "Reach Gachikoi Fandom level for Anya Melfissa",
+		"reward": { "name": "HoloCoins", "value": 3000 }
+	},
+	{
+		"key": "aquaClear",
+		"type": "Character",
+		"label": "KonAqua!",
+		"icon": "./gameicons/achievements/Cleaning_Broom_Awakened_Icon.webp",
+		"desc": "Clear a game of Stage Mode with Minato Aqua",
+		"reward": { "name": "HoloCoins", "value": 500 }
+	},
+	{
+		"key": "aquaGachikoi",
+		"type": "Character",
+		"label": "True AquaCrew",
+		"icon": "./gameicons/achievements/Gachikoi_Achievement_Icon.webp",
+		"desc": "Reach Gachikoi Fandom level for Minato Aqua",
+		"reward": { "name": "HoloCoins", "value": 3000 }
+	},
+	{
+		"key": "artblock",
+		"type": "General",
+		"label": "Art Block",
+		"icon": "./gameicons/achievements/Art_Block_Icon.webp",
+		"desc": "Wait out the entire 20 seconds on Iofi's special without drawing anything",
+		"reward": { "name": "HoloCoins", "value": 1000 }
+	},
+	{
+		"key": "ayameClear",
+		"type": "Character",
+		"label": "Yodayo!",
+		"icon": "./gameicons/achievements/Dual_Katana_Awakened_Icon.webp",
+		"desc": "Clear a game of Stage Mode with Nakiri Ayame",
+		"reward": { "name": "HoloCoins", "value": 500 }
+	},
+	{
+		"key": "ayameGachikoi",
+		"type": "Character",
+		"label": "True Nakirigumi",
+		"icon": "./gameicons/achievements/Gachikoi_Achievement_Icon.webp",
+		"desc": "Reach Gachikoi Fandom level for Nakiri Ayame",
+		"reward": { "name": "HoloCoins", "value": 3000 }
+	},
+	{
+		"key": "azkiClear",
+		"type": "Character",
+		"label": "Kon Azki!",
+		"icon": "./gameicons/achievements/Diva_Song_Awakened_Icon.webp",
+		"desc": "Clear a game of Stage Mode with AZKi",
+		"reward": { "name": "HoloCoins", "value": 500 }
+	},
+	{
+		"key": "azkiGachikoi",
+		"type": "Character",
+		"label": "True Pioneer",
+		"icon": "./gameicons/achievements/Gachikoi_Achievement_Icon.webp",
+		"desc": "Reach Gachikoi Fandom level for AZKi",
+		"reward": { "name": "HoloCoins", "value": 3000 }
+	},
+	{
+		"key": "bae10",
+		"type": "Character",
+		"label": "That's not Dollrys",
+		"icon": "./gameicons/achievements/Play_Dice_Icon.webp",
+		"desc": "Reach 10 minutes with Hakos Baelz",
+		"reward": { "name": "Plushie", "value": 1 }
+	},
+	{
+		"key": "baeClear",
+		"type": "Character",
+		"label": "Boom Boom Boom!",
+		"icon": "./gameicons/achievements/Play_Dice_Awakened_Icon.webp",
+		"desc": "Clear a game of Stage Mode with Hakos Baelz",
+		"reward": { "name": "HoloCoins", "value": 500 }
+	},
+	{
+		"key": "baeGachikoi",
+		"type": "Character",
+		"label": "True Brats",
+		"icon": "./gameicons/achievements/Gachikoi_Achievement_Icon.webp",
+		"desc": "Reach Gachikoi Fandom level for Hakos Baelz",
+		"reward": { "name": "HoloCoins", "value": 3000 }
+	},
+	{
+		"key": "barebones",
+		"type": "General",
+		"label": "Barebones",
+		"icon": "./gameicons/achievements/Barebones_Icon.webp",
+		"desc": "Clear a stage with no items",
+		"reward": { "name": "HoloCoins", "value": 500 }
+	},
+	{
+		"key": "bigger",
+		"type": "General",
+		"label": "Bigger.",
+		"icon": "./gameicons/achievements/Bigger.webp",
+		"desc": "Reach 500% Pick Up Range",
+		"reward": { "name": "Corporation Pin", "value": 1 }
+	},
+	{
+		"key": "boing",
+		"type": "General",
+		"label": "Boing",
+		"icon": "./gameicons/achievements/Boing_Icon.webp",
+		"desc": "Reach 10 minutes with Cutting Board or related weapons using certain characters",
+		"reward": { "name": "Bounce Ball", "value": 1 }
+	},
+	{
+		"key": "bullethell",
+		"type": "General",
+		"label": "Bullet Hell Pro",
+		"icon": "./gameicons/achievements/Bullet_Hell_Pro_Icon.webp",
+		"desc": "Clear a Hard Stage without taking any damage from projectiles",
+		"reward": { "name": "HoloCoins", "value": 8000 }
+	},
+	{
+		"key": "buyingPower",
+		"type": "General",
+		"label": "Buying Power",
+		"icon": "./gameicons/achievements/Buying_Power_Icon.webp",
+		"desc": "Complete a stage while using Super Chatto Time!",
+		"reward": { "name": "Membership", "value": 1 }
+	},
+	{
+		"key": "calli10",
+		"type": "Character",
+		"label": "I Like the Cotton Candy Flavor",
+		"icon": "./gameicons/achievements/Scythe_Swing_Icon.webp",
+		"desc": "Reach 10 minutes with Calliope Mori",
+		"reward": { "name": "Energy Drink", "value": 1 }
+	},
+	{
+		"key": "calliClear",
+		"type": "Character",
+		"label": "Big Ups!",
+		"icon": "./gameicons/achievements/Scythe_Swing_Awakened_Icon.webp",
+		"desc": "Clear a game of Stage Mode with Calliope Mori",
+		"reward": { "name": "HoloCoins", "value": 500 }
+	},
+	{
+		"key": "calliGachikoi",
+		"type": "Character",
+		"label": "True Dead Beat",
+		"icon": "./gameicons/achievements/Gachikoi_Achievement_Icon.webp",
+		"desc": "Reach Gachikoi Fandom level for Calliope Mori",
+		"reward": { "name": "HoloCoins", "value": 3000 }
+	},
+	{
+		"key": "CEOnow",
+		"type": "General",
+		"label": "I'm CEO now",
+		"icon": "./gameicons/achievements/I'm_CEO_now_Icon.webp",
+		"desc": "Defeat a Yagoo",
+		"reward": { "name": "HoloCoins", "value": 2500 }
+	},
+	{
+		"key": "chocoClear",
+		"type": "Character",
+		"label": "My Cute Students~",
+		"icon": "./gameicons/achievements/Love_Needle_Awakened_Icon.webp",
+		"desc": "Clear a game of Stage Mode with Yuzuki Choco",
+		"reward": { "name": "HoloCoins", "value": 500 }
+	},
+	{
+		"key": "chocoGachikoi",
+		"type": "Character",
+		"label": "True Chocomate",
+		"icon": "./gameicons/achievements/Gachikoi_Achievement_Icon.webp",
+		"desc": "Reach Gachikoi Fandom level for Yuzuki Choco",
+		"reward": { "name": "HoloCoins", "value": 3000 }
+	},
+	{
+		"key": "cocoClear",
+		"type": "Character",
+		"label": "GMMF!",
+		"icon": "./gameicons/achievements/Dragon_Katana_Awakened_Icon.webp",
+		"desc": "Clear a game of Stage Mode with Kiryu Coco",
+		"reward": { "name": "HoloCoins", "value": 500 }
+	},
+	{
+		"key": "cocoGachikoi",
+		"type": "Character",
+		"label": "True Tatsunoko",
+		"icon": "./gameicons/achievements/Gachikoi_Achievement_Icon.webp",
+		"desc": "Reach Gachikoi Fandom level for Kiryu Coco",
+		"reward": { "name": "HoloCoins", "value": 3000 }
+	},
+	{
+		"key": "companion",
+		"type": "General",
+		"label": "Lifelong Companion",
+		"icon": "./gameicons/achievements/Lifelong_Companion_Icon.webp",
+		"desc": "Get a pet in the Holo House",
+		"reward": { "name": "HoloCoins", "value": 5000 }
+	},
+	{
+		"key": "couchPotato",
+		"type": "General",
+		"label": "Couch Potato",
+		"icon": "./gameicons/achievements/Couch_Potato_Icon.webp",
+		"desc": "Clear a game of Stage Mode without moving at all",
+		"reward": { "name": "HoloCoins", "value": 10000 }
+	},
+	{
+		"key": "delusional",
+		"type": "General",
+		"label": "Delusional",
+		"icon": "./gameicons/achievements/Delusional_Icon.webp",
+		"desc": "Defeat at least 5000 targets in a stage",
+		"reward": { "name": "Halu", "value": 1 }
+	},
+	{
+		"key": "digin",
+		"type": "General",
+		"label": "Dig In!",
+		"icon": "./gameicons/achievements/Dig_In!_Icon.webp",
+		"desc": "Cook a dish",
+		"reward": { "name": "HoloCoins", "value": 500 }
+	},
+	{
+		"key": "dontFail",
+		"type": "General",
+		"label": "Please Don't Fail",
+		"icon": "./gameicons/achievements/Please_Don't_Fail_Icon.webp",
+		"desc": "Enhance a Weapon once",
+		"reward": { "name": "Blacksmith's Gear", "value": 1 }
+	},
+	{
+		"key": "dontNeed",
+		"type": "General",
+		"label": "I don't need it",
+		"icon": "./gameicons/achievements/I_don't_need_it_Icon.webp",
+		"desc": "Clear a game of Stage Mode without using Special after unlocking it",
+		"reward": { "name": "HoloCoins", "value": 1000 }
+	},
+	{
+		"key": "donttouch",
+		"type": "General",
+		"label": "Don't Touch",
+		"icon": "./gameicons/achievements/Don't_Touch_Icon.webp",
+		"desc": "Don't take any damage for 5 minutes",
+		"reward": { "name": "Researcher's Coat", "value": 1 }
+	},
+	{
+		"key": "employee",
+		"type": "General",
+		"label": "Employee of the Month",
+		"icon": "./gameicons/achievements/Employee_of_the_Month_Icon.webp",
+		"desc": "Level a worker to their maximum level",
+		"reward": { "name": "HoloCoins", "value": 5000 }
+	},
+	{
+		"key": "faster",
+		"type": "General",
+		"label": "Faster!!!",
+		"icon": "./gameicons/achievements/Faster!!!_Icon.webp",
+		"desc": "Win a Worker Race",
+		"reward": { "name": "HoloCoins", "value": 2000 }
+	},
+	{
+		"key": "faunaClear",
+		"type": "Character",
+		"label": "Uuuuuuuuuuuuuuuuuuuuuuuuuuuu",
+		"icon": "./gameicons/achievements/Nature_Shield_Awakened_Icon.webp",
+		"desc": "Clear a game of Stage Mode with Ceres Fauna",
+		"reward": { "name": "HoloCoins", "value": 500 }
+	},
+	{
+		"key": "faunaGachikoi",
+		"type": "Character",
+		"label": "True Sapling",
+		"icon": "./gameicons/achievements/Gachikoi_Achievement_Icon.webp",
+		"desc": "Reach Gachikoi Fandom level for Ceres Fauna",
+		"reward": { "name": "HoloCoins", "value": 3000 }
+	},
+	{
+		"key": "fifthboss",
+		"type": "General",
+		"label": "I am... Peko!",
+		"icon": "./gameicons/achievements/I_am.webp",
+		"desc": "Defeat the Boss of Stage 5",
+		"reward": { "name": "Owl Dagger", "value": 1 }
+	},
+	{
+		"key": "findLetters",
+		"type": "General",
+		"label": "Now Find Them All",
+		"icon": "./gameicons/achievements/Now_Find_Them_All_Icon.webp",
+		"desc": "Find 10 Fan Letters",
+		"reward": { "name": "HoloCoins", "value": 3000 }
+	},
+	{
+		"key": "fired",
+		"type": "General",
+		"label": "Fired",
+		"icon": "./gameicons/achievements/Fired_Icon.webp",
+		"desc": "Be defeated by a Yagoo",
+		"reward": { "name": "HoloCoins", "value": 3000 }
+	},
+	{
+		"key": "firstboss",
+		"type": "General",
+		"label": "BBBBRRRRRREEEEEEEEE",
+		"icon": "./gameicons/achievements/BBBBRRRRRRRREEEEEE_Icon.webp",
+		"desc": "Defeat the Boss of Stage 1",
+		"reward": { "name": "Gorilla's Paw", "value": 1 }
+	},
+	{
+		"key": "firstclear",
+		"type": "General",
+		"label": "First Win!",
+		"icon": "./gameicons/achievements/First_Win!_Icon.png",
+		"desc": "Complete your first game",
+		"reward": { "name": "HoloCoins", "value": 500 }
+	},
+	{
+		"key": "fishfearme",
+		"type": "General",
+		"label": "Fish Fear Me",
+		"icon": "./gameicons/achievements/Fish_Fear_Me_Icon.webp",
+		"desc": "Get 10 combos in the fishing minigame",
+		"reward": { "name": "HoloCoins", "value": 3000 }
+	},
+	{
+		"key": "flareClear",
+		"type": "Character",
+		"label": "Kon Nui!",
+		"icon": "./gameicons/achievements/Splash_Gun_Awakened_Icon.webp",
+		"desc": "Clear a game of Stage Mode with Shiranui Flare",
+		"reward": { "name": "HoloCoins", "value": 500 }
+	},
+	{
+		"key": "flareGachikoi",
+		"type": "Character",
+		"label": "True Elfriend",
+		"icon": "./gameicons/achievements/Gachikoi_Achievement_Icon.webp",
+		"desc": "Reach Gachikoi Fandom level for Shiranui Flare",
+		"reward": { "name": "HoloCoins", "value": 3000 }
+	},
+	{
+		"key": "fleshWound",
+		"type": "General",
+		"label": "Flesh Wound",
+		"icon": "./gameicons/achievements/Flesh_Wound_Icon.webp",
+		"desc": "Lose after 10 minutes in a game",
+		"reward": { "name": "Just Bandage", "value": 1 }
+	},
+	{
+		"key": "fourthboss",
+		"type": "General",
+		"label": "Area 15",
+		"icon": "./gameicons/achievements/Area_15_Icon.webp",
+		"desc": "Defeat the Boss of Stage 4",
+		"reward": { "name": "Sausage", "value": 1 }
+	},
+	{
+		"key": "freeStickers",
+		"type": "General",
+		"label": "Free Stickers",
+		"icon": "./gameicons/achievements/Free_Stickers_Icon.webp",
+		"desc": "Defeat a Silver Yagoo",
+		"reward": { "name": "HoloCoins", "value": 500 }
+	},
+	{
+		"key": "fubukiClear",
+		"type": "Character",
+		"label": "Kon Kon Kitsune!",
+		"icon": "./gameicons/achievements/Fox_Tail_Awakened_Icon.webp",
+		"desc": "Clear a game of Stage Mode with Shirakami Fubuki",
+		"reward": { "name": "HoloCoins", "value": 500 }
+	},
+	{
+		"key": "fubukiGachikoi",
+		"type": "Character",
+		"label": "True Sukonbu",
+		"icon": "./gameicons/achievements/Gachikoi_Achievement_Icon.webp",
+		"desc": "Reach Gachikoi Fandom level for Shirakami Fubuki",
+		"reward": { "name": "HoloCoins", "value": 3000 }
+	},
+	{
+		"key": "fullCollab",
+		"type": "General",
+		"label": "Full Collab",
+		"icon": "./gameicons/achievements/Full_Collab_Icon.webp",
+		"desc": "Get 4 Collab Weapons in one game",
+		"reward": { "name": "HoloCoins", "value": 2000 }
+	},
+	{
+		"key": "fullyLoaded",
+		"type": "General",
+		"label": "Fully Loaded",
+		"icon": "./gameicons/achievements/Fully_Loaded_Icon.webp",
+		"desc": "Complete the Armory",
+		"reward": { "name": "HoloCoins", "value": 10000 }
+	},
+	{
+		"key": "gambling",
+		"type": "General",
+		"label": "Lets Go Gambling!",
+		"icon": "./gameicons/achievements/Lets_Go_Gambling!_Icon.webp",
+		"desc": "Enter the Usada Casino",
+		"reward": { "name": "HoloCoins", "value": 500 }
+	},
+	{
+		"key": "grind",
+		"type": "General",
+		"label": "The Real Grind",
+		"icon": "./gameicons/achievements/The_Real_Grind_Icon.webp",
+		"desc": "Have 1,000,000 coins",
+		"reward": { "name": "HoloCoins", "value": 10000 }
+	},
+	{
+		"key": "guraClear",
+		"type": "Character",
+		"label": "A",
+		"icon": "./gameicons/achievements/Trident_Thrust_Awakened_Icon.webp",
+		"desc": "Clear a game of Stage Mode with Gawr Gura",
+		"reward": { "name": "HoloCoins", "value": 500 }
+	},
+	{
+		"key": "guraGachikoi",
+		"type": "Character",
+		"label": "True Chumbud",
+		"icon": "./gameicons/achievements/Gachikoi_Achievement_Icon.webp",
+		"desc": "Reach Gachikoi Fandom level for Gawr Gura",
+		"reward": { "name": "HoloCoins", "value": 3000 }
+	},
+	{
+		"key": "haatoClear",
+		"type": "Character",
+		"label": "Big Red Heart!",
+		"icon": "./gameicons/achievements/Red_Heart_Awakened_Icon.webp",
+		"desc": "Clear a game of Stage Mode with Akai Haato",
+		"reward": { "name": "HoloCoins", "value": 500 }
+	},
+	{
+		"key": "haatoGachikoi",
+		"type": "Character",
+		"label": "True Haaton",
+		"icon": "./gameicons/achievements/Gachikoi_Achievement_Icon.webp",
+		"desc": "Reach Gachikoi Fandom level for Akai Haato",
+		"reward": { "name": "HoloCoins", "value": 3000 }
+	},
+	{
+		"key": "hallucinated",
+		"type": "General",
+		"label": "Hallucinated",
+		"icon": "./gameicons/achievements/Hallucinated_Icon.webp",
+		"desc": "Clear with Halu level 5",
+		"reward": { "name": "HoloCoins", "value": 3000 }
+	},
+	{
+		"key": "hammertime",
+		"type": "General",
+		"label": "It's Hammer Time",
+		"icon": "./gameicons/achievements/It's_Hammer_Time_Icon.webp",
+		"desc": "Use the Golden Hammer",
+		"reward": { "name": "HoloCoins", "value": 1000 }
+	},
+	{
+		"key": "hardcoreGamer",
+		"type": "General",
+		"label": "Hardcore Gamer",
+		"icon": "./gameicons/achievements/Hardcore_Gamer_Icon.webp",
+		"desc": "Complete a Hard stage",
+		"reward": { "name": "HoloCoins", "value": 5000 }
+	},
+	{
+		"key": "harvest",
+		"type": "General",
+		"label": "Harvest Time",
+		"icon": "./gameicons/achievements/Harvest_Time_Icon.webp",
+		"desc": "Harvest a plant",
+		"reward": { "name": "HoloCoins", "value": 500 }
+	},
+	{
+		"key": "heyhey",
+		"type": "General",
+		"label": "Hey Hey",
+		"icon": "./gameicons/achievements/Hey_Hey_Icon.webp",
+		"desc": "Annoy another member",
+		"reward": { "name": "HoloCoins", "value": 500 }
+	},
+	{
+		"key": "highwayrobbery",
+		"type": "General",
+		"label": "Highway Robbery",
+		"icon": "./gameicons/achievements/Highway_Robbery_Icon.webp",
+		"desc": "Collect 100,000 HoloCoins from workers at once",
+		"reward": { "name": "HoloCoins", "value": 100 }
+	},
+	{
+		"key": "howcouldyou",
+		"type": "General",
+		"label": "How Could You...",
+		"icon": "./gameicons/achievements/How_Could_You.webp",
+		"desc": "Retire a Worker",
+		"reward": { "name": "HoloCoins", "value": 1000 }
+	},
+	{
+		"key": "huh",
+		"type": "General",
+		"label": "Eh?",
+		"icon": "./gameicons/achievements/Eh__Icon.webp",
+		"desc": "Huh?",
+		"reward": { "name": "HoloCoins", "value": 5000 }
+	},
+	{
+		"key": "iDidIt",
+		"type": "General",
+		"label": "I Did It.",
+		"icon": "./gameicons/achievements/I_Did_It.webp",
+		"desc": "Survive up to 30 minutes with Halu level 5",
+		"reward": { "name": "HoloCoins", "value": 10000 }
+	},
+	{
+		"key": "idolPower",
+		"type": "General",
+		"label": "Power of Idols",
+		"icon": "./gameicons/achievements/Special_Attack_Icon.webp",
+		"desc": "Unlock and use a character's Special",
+		"reward": { "name": "Idol Costume", "value": 1 }
+	},
+	{
+		"key": "idolgroup",
+		"type": "General",
+		"label": "Idol Group",
+		"icon": "./gameicons/achievements/Idol_Group_Icon.webp",
+		"desc": "Unlock all characters",
+		"reward": { "name": "HoloCoins", "value": 10000 }
+	},
+	{
+		"key": "ina10",
+		"type": "Character",
+		"label": "Sorry",
+		"icon": "./gameicons/achievements/Summon_Tentacle_Icon.webp",
+		"desc": "Reach 10 minutes with Ninomae Inanis",
+		"reward": { "name": "Cutting Board", "value": 1 }
+	},
+	{
+		"key": "inaClear",
+		"type": "Character",
+		"label": "Ina Ina Ina!",
+		"icon": "./gameicons/achievements/Summon_Tentacle_Awakened_Icon.webp",
+		"desc": "Clear a game of Stage Mode with Ninomae Inanis",
+		"reward": { "name": "HoloCoins", "value": 500 }
+	},
+	{
+		"key": "inaGachikoi",
+		"type": "Character",
+		"label": "True Takodachi",
+		"icon": "./gameicons/achievements/Gachikoi_Achievement_Icon.webp",
+		"desc": "Reach Gachikoi Fandom level for Ninomae Inanis",
+		"reward": { "name": "HoloCoins", "value": 3000 }
+	},
+	{
+		"key": "iofiClear",
+		"type": "Character",
+		"label": "OBISA!",
+		"icon": "./gameicons/achievements/Paint_Brush_Awakened_Icon.webp",
+		"desc": "Clear a game of Stage Mode with Airani Iofifteen",
+		"reward": { "name": "HoloCoins", "value": 500 }
+	},
+	{
+		"key": "iofiGachikoi",
+		"type": "Character",
+		"label": "True Ioforia",
+		"icon": "./gameicons/achievements/Gachikoi_Achievement_Icon.webp",
+		"desc": "Reach Gachikoi Fandom level for Airani Iofifteen",
+		"reward": { "name": "HoloCoins", "value": 3000 }
+	},
+	{
+		"key": "irys10",
+		"type": "Character",
+		"label": "VSinger",
+		"icon": "./gameicons/achievements/Nephilim_Blast_Icon.webp",
+		"desc": "Reach 10 minutes as IRyS",
+		"reward": { "name": "Idol Song", "value": 1 }
+	},
+	{
+		"key": "irysClear",
+		"type": "Character",
+		"label": "Hope has Descended!",
+		"icon": "./gameicons/achievements/Nephilim_Blast_Awakened_Icon.webp",
+		"desc": "Clear a game of Stage Mode with IRyS",
+		"reward": { "name": "Hope Soda", "value": 1 }
+	},
+	{
+		"key": "irysGachikoi",
+		"type": "Character",
+		"label": "True Irystocrat",
+		"icon": "./gameicons/achievements/Gachikoi_Achievement_Icon.webp",
+		"desc": "Reach Gachikoi Fandom level for IRyS",
+		"reward": { "name": "HoloCoins", "value": 3000 }
+	},
+	{
+		"key": "jackpot",
+		"type": "General",
+		"label": "5% of Gamblers",
+		"icon": "./gameicons/achievements/5%_of_Gamblers_Icon.webp",
+		"desc": "Win a Jackpot in slots",
+		"reward": { "name": "HoloCoins", "value": 3000 }
+	},
+	{
+		"key": "justRNG",
+		"type": "General",
+		"label": "Just RNG",
+		"icon": "./gameicons/achievements/Just_RNG_Icon.webp",
+		"desc": "Fail a +1 > +2 enhancing",
+		"reward": { "name": "HoloCoins", "value": 500 }
+	},
+	{
+		"key": "kaelaClear",
+		"type": "Character",
+		"label": "Otsulemao~",
+		"icon": "./gameicons/achievements/Blacksmith_Hammer_Awakened_Icon.webp",
+		"desc": "Clear a game of Stage Mode with Kaela Kovalskia",
+		"reward": { "name": "HoloCoins", "value": 500 }
+	},
+	{
+		"key": "kaelaGachikoi",
+		"type": "Character",
+		"label": "True Pemaloe",
+		"icon": "./gameicons/achievements/Gachikoi_Achievement_Icon.webp",
+		"desc": "Reach Gachikoi Fandom level for Kaela Kovalskia",
+		"reward": { "name": "HoloCoins", "value": 3000 }
+	},
+	{
+		"key": "kanataClear",
+		"type": "Character",
+		"label": "50KG Grip",
+		"icon": "./gameicons/achievements/Angel_Shuriken_Awakened_Icon.webp",
+		"desc": "Clear a game of Stage Mode with Amane Kanata",
+		"reward": { "name": "HoloCoins", "value": 500 }
+	},
+	{
+		"key": "kanataGachikoi",
+		"type": "Character",
+		"label": "True Heimin",
+		"icon": "./gameicons/achievements/Gachikoi_Achievement_Icon.webp",
+		"desc": "Reach Gachikoi Fandom level for Amane Kanata",
+		"reward": { "name": "HoloCoins", "value": 3000 }
+	},
+	{
+		"key": "kiara10",
+		"type": "Character",
+		"label": "Chicken Down",
+		"icon": "./gameicons/achievements/Phoenix_Sword_Icon.webp",
+		"desc": "Reach 10 minutes with Takanashi Kiara",
+		"reward": { "name": "Chicken's Feather", "value": 1 }
+	},
+	{
+		"key": "kiaraClear",
+		"type": "Character",
+		"label": "Kikkeriki",
+		"icon": "./gameicons/achievements/Phoenix_Sword_Awakened_Icon.webp",
+		"desc": "Clear a game of Stage Mode with Takanashi Kiara",
+		"reward": { "name": "HoloCoins", "value": 500 }
+	},
+	{
+		"key": "kiaraGachikoi",
+		"type": "Character",
+		"label": "True KFPg",
+		"icon": "./gameicons/achievements/Gachikoi_Achievement_Icon.webp",
+		"desc": "Reach Gachikoi Fandom level for Takanashi sKiara",
+		"reward": { "name": "HoloCoins", "value": 3000 }
+	},
+	{
+		"key": "koboClear",
+		"type": "Character",
+		"label": "I am under the water",
+		"icon": "./gameicons/achievements/Umbrella_Awakened_Icon.webp",
+		"desc": "Clear a game of Stage Mode with Kobo Kanaeru",
+		"reward": { "name": "HoloCoins", "value": 500 }
+	},
+	{
+		"key": "koboGachikoi",
+		"type": "Character",
+		"label": "True Koboker",
+		"icon": "./gameicons/achievements/Gachikoi_Achievement_Icon.webp",
+		"desc": "Reach Gachikoi Fandom level for Kobo Kanaeru",
+		"reward": { "name": "HoloCoins", "value": 3000 }
+	},
+	{
+		"key": "korone10",
+		"type": "Character",
+		"label": "Hey Guys~",
+		"icon": "./gameicons/achievements/Orayo!_Icon.webp",
+		"desc": "Reach 10 minutes with Korone",
+		"reward": { "name": "X-Potato", "value": 1 }
+	},
+	{
+		"key": "koroneClear",
+		"type": "Character",
+		"label": "Yubi Yubi!",
+		"icon": "./gameicons/achievements/Orayo!_Awakened_Icon.webp",
+		"desc": "Clear a game of Stage Mode with Korone",
+		"reward": { "name": "HoloCoins", "value": 500 }
+	},
+	{
+		"key": "koroneGachikoi",
+		"type": "Character",
+		"label": "True Koronesuki",
+		"icon": "./gameicons/achievements/Gachikoi_Achievement_Icon.webp",
+		"desc": "Reach Gachikoi Fandom level for Korone",
+		"reward": { "name": "HoloCoins", "value": 3000 }
+	},
+	{
+		"key": "kroniiClear",
+		"type": "Character",
+		"label": "GWAK!",
+		"icon": "./gameicons/achievements/Clock_Hands_Awakened_Icon.webp",
+		"desc": "Clear a game of Stage Mode with Kronii",
+		"reward": { "name": "HoloCoins", "value": 500 }
+	},
+	{
+		"key": "kroniiGachikoi",
+		"type": "Character",
+		"label": "True Kronie",
+		"icon": "./gameicons/achievements/Gachikoi_Achievement_Icon.webp",
+		"desc": "Reach Gachikoi Fandom level for Kronii",
+		"reward": { "name": "HoloCoins", "value": 3000 }
+	},
+	{
+		"key": "legalRight",
+		"type": "General",
+		"label": "This is Legal Right?",
+		"icon": "./gameicons/achievements/This_is_Legal_Right__Icon.webp",
+		"desc": "Win a Worker Fight",
+		"reward": { "name": "HoloCoins", "value": 2000 }
+	},
+	{
+		"key": "lookImOnTV",
+		"type": "General",
+		"label": "Look I'm On TV",
+		"icon": "./gameicons/achievements/Look_I'm_On_TV_Icon.webp",
+		"desc": "Watch the TV for over 10 seconds",
+		"reward": { "name": "HoloCoins", "value": 500 }
+	},
+	{
+		"key": "lovenature",
+		"type": "General",
+		"label": "Love Nature",
+		"icon": "./gameicons/achievements/Love_Nature_Icon.webp",
+		"desc": "Harvest at least one of every kind of crop",
+		"reward": { "name": "HoloCoins", "value": 3000 }
+	},
+	{
+		"key": "luckyDay",
+		"type": "General",
+		"label": "Lucky Day",
+		"icon": "./gameicons/achievements/Lucky_Day_Icon.webp",
+		"desc": "Open a Super Box",
+		"reward": { "name": "HoloCoins", "value": 500 }
+	},
+	{
+		"key": "lunaClear",
+		"type": "Character",
+		"label": "Otsukaresama Nanora Ne",
+		"icon": "./gameicons/achievements/Candy_Sword_Awakened_Icon.webp",
+		"desc": "Clear a game of Stage Mode with Himemori Luna",
+		"reward": { "name": "HoloCoins", "value": 500 }
+	},
+	{
+		"key": "lunaGachikoi",
+		"type": "Character",
+		"label": "True Luknight",
+		"icon": "./gameicons/achievements/Gachikoi_Achievement_Icon.webp",
+		"desc": "Reach Gachikoi Fandom level for Himemori Luna",
+		"reward": { "name": "HoloCoins", "value": 3000 }
+	},
+	{
+		"key": "lv50",
+		"type": "General",
+		"label": "Decked Out",
+		"icon": "./gameicons/achievements/Decked_Out_Icon.webp",
+		"desc": "Reach level 50 in one game",
+		"reward": { "name": "Study Glasses", "value": 1 }
+	},
+	{
+		"key": "lv100",
+		"type": "General",
+		"label": "Glasses are Versatile",
+		"icon": "./gameicons/achievements/Glasses_are_Versatile_Icon.webp",
+		"desc": "Reach level 100 in one game",
+		"reward": { "name": "HoloCoins", "value": 2000 }
+	},
+	{
+		"key": "marineClear",
+		"type": "Character",
+		"label": "Set Sail~!",
+		"icon": "./gameicons/achievements/Cutlass_&_Pistol_Awakened_Icon.webp",
+		"desc": "Clear a game of Stage Mode with Marine",
+		"reward": { "name": "HoloCoins", "value": 500 }
+	},
+	{
+		"key": "marineGachikoi",
+		"type": "Character",
+		"label": "True Ichimin",
+		"icon": "./gameicons/achievements/Gachikoi_Achievement_Icon.webp",
+		"desc": "Reach Gachikoi Fandom level for Marine",
+		"reward": { "name": "HoloCoins", "value": 3000 }
+	},
+	{
+		"key": "matsuriClear",
+		"type": "Character",
+		"label": "Wasshoi! Wasshoi!",
+		"icon": "./gameicons/achievements/Ebifrion_Awakened_Icon.webp",
+		"desc": "Clear a game of Stage Mode withNatsuiro  Matsuri",
+		"reward": { "name": "HoloCoins", "value": 500 }
+	},
+	{
+		"key": "matsuriGachikoi",
+		"type": "Character",
+		"label": "True Matsurisu",
+		"icon": "./gameicons/achievements/Gachikoi_Achievement_Icon.webp",
+		"desc": "Reach Gachikoi Fandom level for Natsuiro Matsuri",
+		"reward": { "name": "HoloCoins", "value": 3000 }
+	},
+	{
+		"key": "melClear",
+		"type": "Character",
+		"label": "Kapu Kapu!",
+		"icon": "./gameicons/achievements/Kapu_Kapu_Awakened_Icon.webp",
+		"desc": "Clear a game of Stage Mode with Mel",
+		"reward": { "name": "HoloCoins", "value": 500 }
+	},
+	{
+		"key": "melGachikoi",
+		"type": "Character",
+		"label": "True Kapumin",
+		"icon": "./gameicons/achievements/Gachikoi_Achievement_Icon.webp",
+		"desc": "Reach Gachikoi Fandom level for Mel",
+		"reward": { "name": "HoloCoins", "value": 3000 }
+	},
+	{
+		"key": "midboss",
+		"type": "General",
+		"label": "Fubura is Coming",
+		"icon": "./gameicons/achievements/Fubura_is_coming_Icon.webp",
+		"desc": "Defeat Fubura.",
+		"reward": { "name": "HoloCoins", "value": 500 }
+	},
+	{
+		"key": "mikoClear",
+		"type": "Character",
+		"label": "Nyahello!",
+		"icon": "./gameicons/achievements/Sakura_Gohei_Awakened_Icon.webp",
+		"desc": "Clear a game of Stage Mode with Miko",
+		"reward": { "name": "HoloCoins", "value": 500 }
+	},
+	{
+		"key": "mikoGachikoi",
+		"type": "Character",
+		"label": "True 35P",
+		"icon": "./gameicons/achievements/Gachikoi_Achievement_Icon.webp",
+		"desc": "Reach Gachikoi Fandom level for Miko",
+		"reward": { "name": "HoloCoins", "value": 3000 }
+	},
+	{
+		"key": "millionaire",
+		"type": "General",
+		"label": "Millionaire",
+		"icon": "./gameicons/achievements/Millionaire_Icon.webp",
+		"desc": "Achieve 1m+ score in a single run",
+		"reward": { "name": "HoloCoins", "value": 5000 }
+	},
+	{
+		"key": "mioClear",
+		"type": "Character",
+		"label": "Uchi Uchi, Uchidayo!",
+		"icon": "./gameicons/achievements/Tarot_Cards_Awakened_Icon.webp",
+		"desc": "Clear a game of Stage Mode with Ookami Mio",
+		"reward": { "name": "HoloCoins", "value": 500 }
+	},
+	{
+		"key": "mioGachikoi",
+		"type": "Character",
+		"label": "True Miofa",
+		"icon": "./gameicons/achievements/Gachikoi_Achievement_Icon.webp",
+		"desc": "Reach Gachikoi Fandom level for Ookami Mio",
+		"reward": { "name": "HoloCoins", "value": 3000 }
+	},
+	{
+		"key": "moonaClear",
+		"type": "Character",
+		"label": "Moon Moon~ Moonafic Dayo!",
+		"icon": "./gameicons/achievements/Crescent_Moon_Awakened_Icon.webp",
+		"desc": "Clear a game of Stage Mode with Moona Hoshinova",
+		"reward": { "name": "HoloCoins", "value": 500 }
+	},
+	{
+		"key": "moonaGachikoi",
+		"type": "Character",
+		"label": "True Moonafic",
+		"icon": "./gameicons/achievements/Gachikoi_Achievement_Icon.webp",
+		"desc": "Reach Gachikoi Fandom level for Moona Hoshinova",
+		"reward": { "name": "HoloCoins", "value": 3000 }
+	},
+	{
+		"key": "mumeiClear",
+		"type": "Character",
+		"label": "I forgor",
+		"icon": "./gameicons/achievements/Bird_Feather_Awakened_Icon.webp",
+		"desc": "Clear a game of Stage Mode with Mumei",
+		"reward": { "name": "HoloCoins", "value": 500 }
+	},
+	{
+		"key": "mumeiGachikoi",
+		"type": "Character",
+		"label": "True Hooman",
+		"icon": "./gameicons/achievements/Gachikoi_Achievement_Icon.webp",
+		"desc": "Reach Gachikoi Fandom level for Mumei",
+		"reward": { "name": "HoloCoins", "value": 3000 }
+	},
+	{
+		"key": "muscle",
+		"type": "General",
+		"label": "Muscle!",
+		"icon": "./gameicons/achievements/Muscle!_Icon.webp",
+		"desc": "Take a total of over 500 damage in one game",
+		"reward": { "name": "Breastplate", "value": 1 }
+	},
+	{
+		"key": "noelClear",
+		"type": "Character",
+		"label": "Kon Muscle!",
+		"icon": "./gameicons/achievements/Holy_Mace_Awakened_Icon.webp",
+		"desc": "Clear a game of Stage Mode with Shirogane Noel",
+		"reward": { "name": "HoloCoins", "value": 500 }
+	},
+	{
+		"key": "noelGachikoi",
+		"type": "Character",
+		"label": "True Danin-san",
+		"icon": "./gameicons/achievements/Gachikoi_Achievement_Icon.webp",
+		"desc": "Reach Gachikoi Fandom level for Shirogane Noel",
+		"reward": { "name": "HoloCoins", "value": 3000 }
+	},
+	{
+		"key": "nomain",
+		"type": "General",
+		"label": "No Mains",
+		"icon": "./gameicons/achievements/No_Mains_Icon.webp",
+		"desc": "Clear a stage with Main Weapon at level 1 only",
+		"reward": { "name": "HoloCoins", "value": 3000 }
+	},
+	{
+		"key": "notTakingAnyChances",
+		"type": "General",
+		"label": "Not taking any chances",
+		"icon": "./gameicons/achievements/Not_taking_any_chances_Icon.webp",
+		"desc": "Get 100% crit chance in a single run",
+		"reward": { "name": "HoloCoins", "value": 2000 }
+	},
+	{
+		"key": "nothoughts",
+		"type": "General",
+		"label": "No Thoughts Head Empty",
+		"icon": "./gameicons/achievements/No_Thoughts_Head_Empty_Icon.webp",
+		"desc": "Clear a stage only choosing the first option when leveling up without rerolls",
+		"reward": { "name": "HoloCoins", "value": 5000 }
+	},
+	{
+		"key": "obliterated",
+		"type": "General",
+		"label": "Obliterated",
+		"icon": "./gameicons/achievements/Obliterated_Icon.webp",
+		"desc": "Defeat a 10 or 20-minute boss in under 10 seconds",
+		"reward": { "name": "HoloCoins", "value": 2000 }
+	},
+	{
+		"key": "okayuClear",
+		"type": "Character",
+		"label": "Mogu Mogu... Okayu!",
+		"icon": "./gameicons/achievements/Onigiri_Awakened_Icon.webp",
+		"desc": "Clear a game of Stage Mode with Nekomata Okayu",
+		"reward": { "name": "HoloCoins", "value": 500 }
+	},
+	{
+		"key": "okayuGachikoi",
+		"type": "Character",
+		"label": "True Onigiriya",
+		"icon": "./gameicons/achievements/Gachikoi_Achievement_Icon.webp",
+		"desc": "Reach Gachikoi Fandom level for Nekomata Okayu",
+		"reward": { "name": "HoloCoins", "value": 3000 }
+	},
+	{
+		"key": "ollie10",
+		"type": "Character",
+		"label": "Otsucrazy!",
+		"icon": "./gameicons/achievements/Path_of_Sincerity_Icon.webp",
+		"desc": "Reach 10 minutes with Kureji Ollie",
+		"reward": { "name": "Ninja Headband", "value": 1 }
+	},
+	{
+		"key": "ollieClear",
+		"type": "Character",
+		"label": "ZOMBANWA!",
+		"icon": "./gameicons/achievements/Path_of_Sincerity_Awakened_Icon.webp",
+		"desc": "Clear a game of Stage Mode with Kureji Ollie",
+		"reward": { "name": "HoloCoins", "value": 500 }
+	},
+	{
+		"key": "ollieGachikoi",
+		"type": "Character",
+		"label": "True Zomrade",
+		"icon": "./gameicons/achievements/Gachikoi_Achievement_Icon.webp",
+		"desc": "Reach Gachikoi Fandom level for Kureji Ollie",
+		"reward": { "name": "HoloCoins", "value": 3000 }
+	},
+	{
+		"key": "oneMore",
+		"type": "General",
+		"label": "Just One More Life",
+		"icon": "./gameicons/achievements/Just_One_More_Life_Icon.webp",
+		"desc": "Clear a Stage Mode run after dying 3 times with Chickens Feather",
+		"reward": { "name": "Raven Feather", "value": 1 }
+	},
+	{
+		"key": "operations",
+		"type": "General",
+		"label": "Order of Operations",
+		"icon": "./gameicons/achievements/Order_of_Operations_Icon.webp",
+		"desc": "Get no questions wrong in Stage 4 (Hard)",
+		"reward": { "name": "HoloCoins", "value": 3000 }
+	},
+	{
+		"key": "oraora",
+		"type": "General",
+		"label": "Orarara",
+		"icon": "./gameicons/achievements/Orarara_Icon.webp",
+		"desc": "Choose the Haste Stat Up option 10 times when leveling up",
+		"reward": { "name": "Candy Kingdom Sweets", "value": 1 }
+	},
+	{
+		"key": "pacifist",
+		"type": "General",
+		"label": "Pacifist",
+		"icon": "./gameicons/achievements/Pacifist_Icon.webp",
+		"desc": "Leave a boss alive for 5 minutes or more",
+		"reward": { "name": "HoloCoins", "value": 1000 }
+	},
+	{
+		"key": "painPeko",
+		"type": "General",
+		"label": "Pain Peko",
+		"icon": "./gameicons/achievements/Pain_Peko_Icon.webp",
+		"desc": "Drop a super item",
+		"reward": { "name": "HoloCoins", "value": 1000 }
+	},
+	{
+		"key": "payDay",
+		"type": "General",
+		"label": "Payday",
+		"icon": "./gameicons/achievements/Payday_Icon.webp",
+		"desc": "Defeat a Golden Yagoo",
+		"reward": { "name": "Stolen Piggy Bank", "value": 1 }
+	},
+	{
+		"key": "payToWin",
+		"type": "General",
+		"label": "Pay To Win",
+		"icon": "./gameicons/achievements/Pay_To_Win_Icon.webp",
+		"desc": "Get a Weapon to +10 enhancements",
+		"reward": { "name": "HoloCoins", "value": 5000 }
+	},
+	{
+		"key": "pekoraClear",
+		"type": "Character",
+		"label": "Konpeko! Konpeko! Konpeko!",
+		"icon": "./gameicons/achievements/Rocket_Launcher_Awakened_Icon.webp",
+		"desc": "Clear a game of Stage Mode with Usada Pekora",
+		"reward": { "name": "HoloCoins", "value": 500 }
+	},
+	{
+		"key": "pekoraGachikoi",
+		"type": "Character",
+		"label": "True Nousagi",
+		"icon": "./gameicons/achievements/Gachikoi_Achievement_Icon.webp",
+		"desc": "Reach Gachikoi Fandom level for Usada Pekora",
+		"reward": { "name": "HoloCoins", "value": 3000 }
+	},
+	{
+		"key": "petDog",
+		"type": "General",
+		"label": "You Can Pet The Dog",
+		"icon": "./gameicons/achievements/You_Can_Pet_The_Dog_Icon.webp",
+		"desc": "Pet Bubba as Amelia Watson",
+		"reward": { "name": "HoloCoins", "value": 200 }
+	},
+	{
+		"key": "plentyoffish",
+		"type": "General",
+		"label": "Plenty of Fish in the Sea",
+		"icon": "./gameicons/achievements/Plenty_of_Fish_in_the_Sea_Icon.webp",
+		"desc": "Catch at least one of every kind of fish",
+		"reward": { "name": "HoloCoins", "value": 3000 }
+	},
+	{
+		"key": "powerLevelling",
+		"type": "General",
+		"label": "Power Leveling",
+		"icon": "./gameicons/achievements/Power_Leveling_Icon.webp",
+		"desc": "Level up 5 times in a row in one second",
+		"reward": { "name": "HoloCoins", "value": 2000 }
+	},
+	{
+		"key": "queen",
+		"type": "General",
+		"label": "Queen of Jumping",
+		"icon": "./gameicons/achievements/Queen_of_Jumping_Icon.webp",
+		"desc": "Clear the Tower of Suffering",
+		"reward": { "name": "HoloCoins", "value": 10000 }
+	},
+	{
+		"key": "rawstrength",
+		"type": "General",
+		"label": "Raw Strength",
+		"icon": "./gameicons/achievements/Raw_Strength_Icon.webp",
+		"desc": "Clear a (Hard) stage without taking any Healing Items",
+		"reward": { "name": "HoloCoins", "value": 5000 }
+	},
+	{
+		"key": "reineClear",
+		"type": "Character",
+		"label": "Attention Please!",
+		"icon": "./gameicons/achievements/Peafowl_Feathers_Awakened_Icon.webp",
+		"desc": "Clear a game of Stage Mode with PavoliaReine",
+		"reward": { "name": "HoloCoins", "value": 500 }
+	},
+	{
+		"key": "reineGachikoi",
+		"type": "Character",
+		"label": "True MERAKyat",
+		"icon": "./gameicons/achievements/Gachikoi_Achievement_Icon.webp",
+		"desc": "Reach Gachikoi Fandom level for PavoliaReine",
+		"reward": { "name": "HoloCoins", "value": 3000 }
+	},
+	{
+		"key": "rhythmmaster",
+		"type": "General",
+		"label": "Rhythm Master",
+		"icon": "./gameicons/achievements/Rhythm_Master_Icon.webp",
+		"desc": "Get 50 combos in the fishing minigame",
+		"reward": { "name": "HoloCoins", "value": 10000 }
+	},
+	{
+		"key": "risuClear",
+		"type": "Character",
+		"label": "Purupuru ganbari Risu~!",
+		"icon": "./gameicons/achievements/Nuts_Awakened_Icon.webp",
+		"desc": "Clear a game of Stage Mode with Ayunda Risu",
+		"reward": { "name": "HoloCoins", "value": 500 }
+	},
+	{
+		"key": "risuGachikoi",
+		"type": "Character",
+		"label": "True Risuner",
+		"icon": "./gameicons/achievements/Gachikoi_Achievement_Icon.webp",
+		"desc": "Reach Gachikoi Fandom level for Ayunda Risu",
+		"reward": { "name": "HoloCoins", "value": 3000 }
+	},
+	{
+		"key": "robocoClear",
+		"type": "Character",
+		"label": "He-robo~",
+		"icon": "./gameicons/achievements/Hi-Spec_Pistol_Awakened_Icon.webp",
+		"desc": "Clear a game of Stage Mode with Roboco",
+		"reward": { "name": "HoloCoins", "value": 500 }
+	},
+	{
+		"key": "robocoGachikoi",
+		"type": "Character",
+		"label": "True Robosa",
+		"icon": "./gameicons/achievements/Gachikoi_Achievement_Icon.webp",
+		"desc": "Reach Gachikoi Fandom level for Roboco",
+		"reward": { "name": "HoloCoins", "value": 3000 }
+	},
+	{
+		"key": "safeISwear",
+		"type": "General",
+		"label": "It's Safe I Swear",
+		"icon": "./gameicons/achievements/It's_Safe_I_Swear_Icon.webp",
+		"desc": "Complete a stage using Plug-In Type Asacoco",
+		"reward": { "name": "Injection Type Asacoco", "value": 1 }
+	},
+	{
+		"key": "sana10",
+		"type": "Character",
+		"label": "Limiters Released!",
+		"icon": "./gameicons/achievements/Orbit_Icon.webp",
+		"desc": "Reach 10 minutes with Tsukumo Sana",
+		"reward": { "name": "Limiter", "value": 1 }
+	},
+	{
+		"key": "sanaClear",
+		"type": "Character",
+		"label": "Sana Is Eternal!",
+		"icon": "./gameicons/achievements/Orbit_Awakened_Icon.webp",
+		"desc": "Clear a game of Stage Mode with Tsukumo Sana",
+		"reward": { "name": "HoloCoins", "value": 500 }
+	},
+	{
+		"key": "sanaGachikoi",
+		"type": "Character",
+		"label": "True Sanallite",
+		"icon": "./gameicons/achievements/Gachikoi_Achievement_Icon.webp",
+		"desc": "Reach Gachikoi Fandom level for Tsukumo Sana",
+		"reward": { "name": "HoloCoins", "value": 3000 }
+	},
+	{
+		"key": "scammed",
+		"type": "General",
+		"label": "Scammed",
+		"icon": "./gameicons/achievements/Scammed_Icon.webp",
+		"desc": "Get 100,000 UsaChips",
+		"reward": { "name": "HoloCoins", "value": 5000 }
+	},
+	{
+		"key": "SCT",
+		"type": "General",
+		"label": "It's Super Chat Time",
+		"icon": "./gameicons/achievements/It's_Super_Chat_Time_Icon.webp",
+		"desc": "Have 5000 coins",
+		"reward": { "name": "Super Chatto Time!", "value": 1 }
+	},
+	{
+		"key": "secondboss",
+		"type": "General",
+		"label": "Tears of Happiness...?",
+		"icon": "./gameicons/achievements/Tears_of_Happiness.webp",
+		"desc": "Defeat the boss of Stage 2",
+		"reward": { "name": "CEO's Tears", "value": 1 }
+	},
+	{
+		"key": "shinyfish",
+		"type": "General",
+		"label": "Gotta Catch 'em All",
+		"icon": "./gameicons/achievements/Gotta_Catch_'em_All_Icon.webp",
+		"desc": "Catch a Shiny fish",
+		"reward": { "name": "HoloCoins", "value": 5000 }
+	},
+	{
+		"key": "shion10",
+		"type": "Character",
+		"label": "Kusogaki Power",
+		"icon": "./gameicons/achievements/Murasaki_Bolt_Icon.webp",
+		"desc": "Reach 10 minutes with Murasaki Shion",
+		"reward": { "name": "Kusogaki Shackles", "value": 1 }
+	},
+	{
+		"key": "shionClear",
+		"type": "Character",
+		"label": "Neeeeeeeeeeeeeeeeeeeeee~",
+		"icon": "./gameicons/achievements/Murasaki_Bolt_Awakened_Icon.webp",
+		"desc": "Clear a game of Stage Mode with Murasaki Shion",
+		"reward": { "name": "HoloCoins", "value": 500 }
+	},
+	{
+		"key": "shionGachikoi",
+		"type": "Character",
+		"label": "True Shiokko",
+		"icon": "./gameicons/achievements/Gachikoi_Achievement_Icon.webp",
+		"desc": "Reach Gachikoi Fandom level for Shion",
+		"reward": { "name": "HoloCoins", "value": 3000 }
+	},
+	{
+		"key": "skillissue",
+		"type": "General",
+		"label": "Skill Issue",
+		"icon": "./gameicons/achievements/Skill_Issue_Icon.webp",
+		"desc": "Clear stage mode without having any Character Skills (Fandom off)",
+		"reward": { "name": "Beetle", "value": 1 }
+	},
+	{
+		"key": "soloBeater",
+		"type": "General",
+		"label": "Solo Beater",
+		"icon": "./gameicons/achievements/Solo_Beater_Icon.webp",
+		"desc": "Clear with only your main weapon",
+		"reward": { "name": "HoloCoins", "value": 10000 }
+	},
+	{
+		"key": "soraClear",
+		"type": "Character",
+		"label": "Nun-nun!",
+		"icon": "./gameicons/achievements/Bright_Star_Awakened_Icon.webp",
+		"desc": "Clear a game of Stage Mode with Tokino Sora",
+		"reward": { "name": "HoloCoins", "value": 500 }
+	},
+	{
+		"key": "soraGachikoi",
+		"type": "Character",
+		"label": "True Soratomo",
+		"icon": "./gameicons/achievements/Gachikoi_Achievement_Icon.webp",
+		"desc": "Reach Gachikoi Fandom level for Tokino Sora",
+		"reward": { "name": "HoloCoins", "value": 3000 }
+	},
+	{
+		"key": "speedrunner",
+		"type": "General",
+		"label": "Speed Runner",
+		"icon": "./gameicons/achievements/Speed_Runner_Icon.webp",
+		"desc": "Clear a stage in Time Mode",
+		"reward": { "name": "HoloCoins", "value": 2000 }
+	},
+	{
+		"key": "stampHunting",
+		"type": "General",
+		"label": "Stamp Hunter",
+		"icon": "./gameicons/achievements/Stamp_Hunter_Icon.webp",
+		"desc": "Sell 10 Stamps in 1 run.",
+		"reward": { "name": "Promise Tiara", "value": 1 }
+	},
+	{
+		"key": "stealfish",
+		"type": "General",
+		"label": "Thanks for the Fish",
+		"icon": "./gameicons/achievements/Thanks_for_the_Fish_Icon.webp",
+		"desc": "Steal a fish from another Holo member.",
+		"reward": { "name": "HoloCoins", "value": 500 }
+	},
+	{
+		"key": "subaruClear",
+		"type": "Character",
+		"label": "Ajimaru Ajimaru!",
+		"icon": "./gameicons/achievements/Baseball_Pitch_Awakened_Icon.webp",
+		"desc": "Clear a game of Stage Mode with Oozora Subaru",
+		"reward": { "name": "HoloCoins", "value": 500 }
+	},
+	{
+		"key": "subaruGachikoi",
+		"type": "Character",
+		"label": "True Subatomo",
+		"icon": "./gameicons/achievements/Gachikoi_Achievement_Icon.webp",
+		"desc": "Reach Gachikoi Fandom level for Oozora Subaru",
+		"reward": { "name": "HoloCoins", "value": 3000 }
+	},
+	{
+		"key": "suiseiClear",
+		"type": "Character",
+		"label": "Cute today too!",
+		"icon": "./gameicons/achievements/Axe_Swing_Awakened_Icon.webp",
+		"desc": "Clear a game of Stage Mode with Hoshimachi Suisei",
+		"reward": { "name": "HoloCoins", "value": 500 }
+	},
+	{
+		"key": "suiseiGachikoi",
+		"type": "Character",
+		"label": "True Hoshiyomi",
+		"icon": "./gameicons/achievements/Gachikoi_Achievement_Icon.webp",
+		"desc": "Reach Gachikoi Fandom level for Hoshimachi Suisei",
+		"reward": { "name": "HoloCoins", "value": 3000 }
+	},
+	{
+		"key": "tankclass",
+		"type": "General",
+		"label": "Tank Class",
+		"icon": "./gameicons/achievements/Tank_class_Icon.webp",
+		"desc": "Have over 500 HP in 1 run.",
+		"reward": { "name": "HoloCoins", "value": 3000 }
+	},
+	{
+		"key": "thankYou",
+		"type": "General",
+		"label": "Thank You",
+		"icon": "./gameicons/achievements/Thank_You_Icon.webp",
+		"desc": "Watch the credits to the end.",
+		"reward": { "name": "HoloCoins", "value": 1000 }
+	},
+	{
+		"key": "thirdboss",
+		"type": "General",
+		"label": "You have been Cursed",
+		"icon": "./gameicons/achievements/You_have_been_Cursed_Icon.webp",
+		"desc": "Defeat the boss of Stage 3",
+		"reward": { "name": "EN's Curse", "value": 1 }
+	},
+	{
+		"key": "timeToUpgrade",
+		"type": "General",
+		"label": "Time to Upgrade",
+		"icon": "./gameicons/achievements/Time_To_Upgrade_Icon.webp",
+		"desc": "Use an anvil",
+		"reward": { "name": "Credit Card", "value": 1 }
+	},
+	{
+		"key": "toohalu",
+		"type": "General",
+		"label": "Went Too Halu",
+		"icon": "./gameicons/achievements/Went_Too_Halu_Icon.webp",
+		"desc": "Be defeated while using halu",
+		"reward": { "name": "GWS Pill", "value": 1 }
+	},
+	{
+		"key": "towaClear",
+		"type": "Character",
+		"label": "Konyappi~!",
+		"icon": "./gameicons/achievements/Devil_Assault_Rifle_Awakened_Icon.webp",
+		"desc": "Clear a game of Stage Mode with Tokoyami Towa",
+		"reward": { "name": "HoloCoins", "value": 500 }
+	},
+	{
+		"key": "towaGachikoi",
+		"type": "Character",
+		"label": "True Tokoyami Kenzoku",
+		"icon": "./gameicons/achievements/Gachikoi_Achievement_Icon.webp",
+		"desc": "Reach Gachikoi Fandom level for Tokoyami Towa",
+		"reward": { "name": "HoloCoins", "value": 3000 }
+	},
+	{
+		"key": "trueRNG",
+		"type": "General",
+		"label": "True RNG",
+		"icon": "./gameicons/achievements/True_RNG_Icon.webp",
+		"desc": "Fail enhancements 5 times in 1 run",
+		"reward": { "name": "HoloCoins", "value": 2000 }
+	},
+	{
+		"key": "wamy",
+		"type": "General",
+		"label": "Wamy",
+		"icon": "./gameicons/achievements/Wamy.webp",
+		"desc": "Clear any stage while using",
+		"reward": { "name": "Wamy Water", "value": 1 }
+	},
+	{
+		"key": "watameClear",
+		"type": "Character",
+		"label": "Yo Yo Yo!",
+		"icon": "./gameicons/achievements/Tsunomaki_Harp_Awakened_Icon.webp",
+		"desc": "Clear a game of Stage Mode with Tsunomaki Watame",
+		"reward": { "name": "HoloCoins", "value": 500 }
+	},
+	{
+		"key": "watameGachikoi",
+		"type": "Character",
+		"label": "True Watamate",
+		"icon": "./gameicons/achievements/Gachikoi_Achievement_Icon.webp",
+		"desc": "Reach Gachikoi Fandom level for Tsunomaki Watame",
+		"reward": { "name": "HoloCoins", "value": 3000 }
+	},
+	{
+		"key": "welcomehome",
+		"type": "General",
+		"label": "Welcome Home!",
+		"icon": "./gameicons/achievements/Welcome_Home!_Icon.webp",
+		"desc": "Go to Holo House",
+		"reward": { "name": "HoloCoins", "value": 500 }
+	},
+	{
+		"key": "welltrained",
+		"type": "General",
+		"label": "Well Trained",
+		"icon": "./gameicons/achievements/Well_Trained_Icon.webp",
+		"desc": "Get Manager Level 4",
+		"reward": { "name": "HoloCoins", "value": 10000 }
+	},
+	{
+		"key": "yagoostatue",
+		"type": "General",
+		"label": "Hai...",
+		"icon": "./gameicons/achievements/Hai.webp",
+		"desc": "Destroy a Yagoo Statue",
+		"reward": { "name": "HoloCoins", "value": 100 }
+	},
+	{
+		"key": "zenLoss",
+		"type": "General",
+		"label": "Zen Loss",
+		"icon": "./gameicons/achievements/Zenloss_Icon.webp",
+		"desc": "Lose in a Casino game with 0 UsaChips remaining.",
+		"reward": { "name": "HoloCoins", "value": 2000 }
+	},
+	{
+		"key": "zeta10",
+		"type": "Character",
+		"label": "A Little Trollin",
+		"icon": "./gameicons/achievements/Silencer_Pistol_Icon.webp",
+		"desc": "Reach 10 minutes with Vestia Zeta",
+		"reward": { "name": "Focus Shades", "value": 1 }
+	},
+	{
+		"key": "zetaClear",
+		"type": "Character",
+		"label": "Zetamin",
+		"icon": "./gameicons/achievements/Silencer_Pistol_Awakened_Icon.webp",
+		"desc": "Clear a game of Stage Mode with Vestia Zeta",
+		"reward": { "name": "HoloCoins", "value": 500 }
+	},
+	{
+		"key": "zetaGachikoi",
+		"type": "Character",
+		"label": "True Zecretary",
+		"icon": "./gameicons/achievements/Gachikoi_Achievement_Icon.webp",
+		"desc": "Reach Gachikoi Fandom level for Vestia Zeta",
+		"reward": { "name": "HoloCoins", "value": 3000 }
+	}
+]

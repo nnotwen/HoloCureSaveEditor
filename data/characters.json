@@ -1,0 +1,519 @@
+{
+	"ame": {
+		"fullname": "Amelia Watson",
+		"weapon": "Pistol Shot",
+		"special": "Slow Time",
+		"skills": ["FPS Mastery", "Detective Eye", "Bubba"],
+		"generation": {
+			"slug": "myth",
+			"full": "HoloMyth"
+		},
+		"outfits": ["Original", "Casual", "Formal", "New Year", "Space"]
+	},
+	"gura": {
+		"fullname": "Gawr Gura",
+		"weapon": "Trident",
+		"special": "Shark Call",
+		"skills": ["Short Height", "Power of Atlantis", "Shark Bite"],
+		"generation": {
+			"slug": "myth",
+			"full": "HoloMyth"
+		},
+		"outfits": ["Original", "Casual", "Formal", "New Year", "School"]
+	},
+	"ina": {
+		"fullname": "Ninomae Ina'nis",
+		"weapon": "Ancient Ones",
+		"special": "The Ancient One",
+		"skills": ["The Void", "The Forbidden Wah", "Tako"],
+		"generation": {
+			"slug": "myth",
+			"full": "HoloMyth"
+		},
+		"outfits": ["Original", "Casual", "Formal", "New Year", "Gamer"]
+	},
+	"kiara": {
+		"fullname": "Takanashi Kiara",
+		"weapon": "Phoenix Sword",
+		"special": "Phoenix",
+		"skills": ["Dancer", "Trailblazer", "Rally"],
+		"generation": {
+			"slug": "myth",
+			"full": "HoloMyth"
+		},
+		"outfits": ["Original", "Casual", "Formal", "New Year", "Dimdl"]
+	},
+	"calli": {
+		"fullname": "Mori Calliope",
+		"weapon": "Scythe",
+		"special": "Reaper",
+		"skills": ["Rapper", "Workaholic", "Dead Beat"],
+		"generation": {
+			"slug": "myth",
+			"full": "HoloMyth"
+		},
+		"outfits": ["Original", "Casual", "Formal", "New Year", "Sleepwear"]
+	},
+	"bae": {
+		"fullname": "Hakos Baelz",
+		"weapon": "Dice",
+		"special": "Chaos",
+		"skills": ["Random", "RAT", "Chaos"],
+		"generation": {
+			"slug": "councilHope",
+			"full": "HoloPromise"
+		},
+		"outfits": ["Original", "New Year", "Casual", "Military"]
+	},
+	"kronii": {
+		"fullname": "Ouro Kronii",
+		"weapon": "Blade of Time",
+		"special": "Perfection",
+		"skills": ["Time", "Patience", "Perfection"],
+		"generation": {
+			"slug": "councilHope",
+			"full": "HoloPromise"
+		},
+		"outfits": ["Original", "New Year", "Casual", "Military"]
+	},
+	"fauna": {
+		"fullname": "Ceres Fauna",
+		"weapon": "Nature's Staff",
+		"special": "Sapling",
+		"skills": ["Nature", "Guardian", "Flower"],
+		"generation": {
+			"slug": "councilHope",
+			"full": "HoloPromise"
+		},
+		"outfits": ["Original", "New Year", "Casual", "Gothic"]
+	},
+	"mumei": {
+		"fullname": "Nanashi Mumei",
+		"weapon": "Friend",
+		"special": "Civilization",
+		"skills": ["History", "Bird", "Civilization"],
+		"generation": {
+			"slug": "councilHope",
+			"full": "HoloPromise"
+		},
+		"outfits": ["Original", "Casual", "Goth", "New Year"]
+	},
+	"sana": {
+		"fullname": "Tsukumo Sana",
+		"weapon": "Sanallite",
+		"special": "Infinity",
+		"skills": ["Twinkle", "Chaos", "Gravity"],
+		"generation": {
+			"slug": "councilHope",
+			"full": "HoloPromise"
+		},
+		"outfits": ["Original", "New Year", "Casual"]
+	},
+	"irys": {
+		"fullname": "IRyS",
+		"weapon": "Nephilim",
+		"special": "Hope",
+		"skills": ["Half Demon", "Half Angel", "Nephilim"],
+		"generation": {
+			"slug": "councilHope",
+			"full": "HoloPromise"
+		},
+		"outfits": ["Original", "Casual", "Irys 1.0 Christmas", "Irys 1.0", "New Year"]
+	},
+	"fubuki": {
+		"fullname": "Shirakami Fubuki",
+		"weapon": "Kitsune",
+		"special": "Kon Kon",
+		"skills": ["Friend", "Lone Fox", "Good Girl"],
+		"generation": {
+			"slug": "gamers",
+			"full": "HoloGamers"
+		},
+		"outfits": ["Original", "Casual", "FubukiTEK", "New Year", "Kurokami"]
+	},
+	"mio": {
+		"fullname": "Ookami Mio",
+		"weapon": "Mio's Guidance",
+		"special": "Lunar Fox",
+		"skills": ["Wolf Spirit", "Fortune Teller", "Mother Wolf"],
+		"generation": {
+			"slug": "gamers",
+			"full": "HoloGamers"
+		},
+		"outfits": ["Original", "Casual", "Casual", "New Year"]
+	},
+	"okayu": {
+		"fullname": "Nekomata Okayu",
+		"weapon": "Rice Ball",
+		"special": "Onigiri",
+		"skills": ["Cat Spirit", "Korone's Friend", "Lazy"],
+		"generation": {
+			"slug": "gamers",
+			"full": "HoloGamers"
+		},
+		"outfits": ["Original", "Sailor", "LoungeWear", "Cheshire Cat"]
+	},
+	"korone": {
+		"fullname": "Inugami Korone",
+		"weapon": "Doggy Punch",
+		"special": "Yubi Yubi",
+		"skills": ["Dog Spirit", "Energizer", "Good Boy"],
+		"generation": {
+			"slug": "gamers",
+			"full": "HoloGamers"
+		},
+		"outfits": ["Original", "Dress", "Casual", "Alice in Wonderland"]
+	},
+	"sora": {
+		"fullname": "Tokino Sora",
+		"weapon": "Star",
+		"special": "Miracle",
+		"skills": ["Angel", "First Star", "Dreamer"],
+		"generation": {
+			"slug": "gen0",
+			"full": "JP 0th Gen"
+		},
+		"outfits": ["Original", "Casual", "Streetwear", "Birthday 2022"]
+	},
+	"azki": {
+		"fullname": "AZKi",
+		"weapon": "Diva",
+		"special": "Concert",
+		"skills": ["Singer", "Virtual", "Diva"],
+		"generation": {
+			"slug": "gen0",
+			"full": "JP 0th Gen"
+		},
+		"outfits": ["Original", "First Design", "Second Design", "Third Design"]
+	},
+	"roboco": {
+		"fullname": "Roboco-san",
+		"weapon": "Robo Fists",
+		"special": "System Update",
+		"skills": ["Robot", "AI", "Upgrade"],
+		"generation": {
+			"slug": "gen0",
+			"full": "JP 0th Gen"
+		},
+		"outfits": ["Original", "Bomber Jacket", "Dress", "Loungewear"]
+	},
+	"suisei": {
+		"fullname": "Hoshimachi Suisei",
+		"weapon": "Axe",
+		"special": "Comet",
+		"skills": ["Stellar", "Comet", "Idol"],
+		"generation": {
+			"slug": "gen0",
+			"full": "JP 0th Gen"
+		},
+		"outfits": ["Original", "Jacket", "Sailor", "Dress"]
+	},
+	"miko": {
+		"fullname": "Sakura Miko",
+		"weapon": "Miko Stick",
+		"special": "Elite",
+		"skills": ["Shrine Maiden", "Nyahello", "Elite"],
+		"generation": {
+			"slug": "gen0",
+			"full": "JP 0th Gen"
+		},
+		"outfits": ["Original", "Casual", "2020", "New Year"]
+	},
+	"haato": {
+		"fullname": "Akai Haato",
+		"weapon": "Haato",
+		"special": "Haachama",
+		"skills": ["Haachama Cooking", "Chaos", "Haato"],
+		"generation": {
+			"slug": "gen1",
+			"full": "JP 1st Gen"
+		},
+		"outfits": ["Original", "Gothic", "Casual"]
+	},
+	"mel": {
+		"fullname": "Yozora Mel",
+		"weapon": "Fangs",
+		"special": "Night",
+		"skills": ["Vampire", "Moonlight", "Dreamer"],
+		"generation": {
+			"slug": "gen1",
+			"full": "JP 1st Gen"
+		},
+		"outfits": ["Original", "Third 2D", "Fourth 2D"]
+	},
+	"matsuri": {
+		"fullname": "Natsuiro Matsuri",
+		"weapon": "Festival",
+		"special": "Matsuri",
+		"skills": ["Festival", "Cheerleader", "Fireworks"],
+		"generation": {
+			"slug": "gen1",
+			"full": "JP 1st Gen"
+		},
+		"outfits": ["Original", "Casual", "Kaoga E"]
+	},
+	"aki": {
+		"fullname": "Aki Rosenthal",
+		"weapon": "Bow",
+		"special": "Rosetai",
+		"skills": ["Elf", "Rosetai", "Healer"],
+		"generation": {
+			"slug": "gen1",
+			"full": "JP 1st Gen"
+		},
+		"outfits": ["Original", "Gothic", "Gamer"]
+	},
+	"subaru": {
+		"fullname": "Oozora Subaru",
+		"weapon": "Duck",
+		"special": "Shuba",
+		"skills": ["Duck", "Cheerleader", "Guts"],
+		"generation": {
+			"slug": "gen2",
+			"full": "JP 2nd Gen"
+		},
+		"outfits": ["Original", "Second Outfit", "Fourth Outfit"]
+	},
+	"choco": {
+		"fullname": "Yuzuki Choco",
+		"weapon": "Choco",
+		"special": "Choco Love",
+		"skills": ["Nurse", "Sweet", "Teacher"],
+		"generation": {
+			"slug": "gen2",
+			"full": "JP 2nd Gen"
+		},
+		"outfits": ["Original", "Nurse", "Maid"]
+	},
+	"shion": {
+		"fullname": "Murasaki Shion",
+		"weapon": "Magic",
+		"special": "Shion",
+		"skills": ["Witch", "Child", "Magic"],
+		"generation": {
+			"slug": "gen2",
+			"full": "JP 2nd Gen"
+		},
+		"outfits": ["Original", "Gothic Cat", "Maid"]
+	},
+	"ayame": {
+		"fullname": "Nakiri Ayame",
+		"weapon": "Katana",
+		"special": "Oni",
+		"skills": ["Oni", "Laugh", "Nakirium"],
+		"generation": {
+			"slug": "gen2",
+			"full": "JP 2nd Gen"
+		},
+		"outfits": ["Original", "Girly Lolita", "Fourth 2D Outfit"]
+	},
+	"aqua": {
+		"fullname": "Minato Aqua",
+		"weapon": "Aqua",
+		"special": "Maiden",
+		"skills": ["Maid", "Baka", "Aqua"],
+		"generation": {
+			"slug": "gen2",
+			"full": "JP 2nd Gen"
+		},
+		"outfits": ["Original", "Streetwear", "Schoolgirl"]
+	},
+	"pekora": {
+		"fullname": "Usada Pekora",
+		"weapon": "Carrot",
+		"special": "Peko",
+		"skills": ["Bunny", "War Criminal", "Peko"],
+		"generation": {
+			"slug": "gen3",
+			"full": "HoloFantasy"
+		},
+		"outfits": ["Original", "Casual"]
+	},
+	"marine": {
+		"fullname": "Houshou Marine",
+		"weapon": "Cutlass",
+		"special": "Pirate",
+		"skills": ["Pirate", "Captain", "Treasure"],
+		"generation": {
+			"slug": "gen3",
+			"full": "HoloFantasy"
+		},
+		"outfits": ["Original", "Gothic Lolita"]
+	},
+	"noel": {
+		"fullname": "Shirogane Noel",
+		"weapon": "Knight",
+		"special": "Knight",
+		"skills": ["Knight", "Muscle", "Protector"],
+		"generation": {
+			"slug": "gen3",
+			"full": "HoloFantasy"
+		},
+		"outfits": ["Original", "Casual"]
+	},
+	"flare": {
+		"fullname": "Shiranui Flare",
+		"weapon": "Flame",
+		"special": "Flare",
+		"skills": ["Elf", "Flame", "Danchou"],
+		"generation": {
+			"slug": "gen3",
+			"full": "HoloFantasy"
+		},
+		"outfits": ["Original", "Dress"]
+	},
+	"coco": {
+		"fullname": "Kiryu Coco",
+		"weapon": "Dragon",
+		"special": "Dragon",
+		"skills": ["Dragon", "Gangimari", "Chairman"],
+		"generation": {
+			"slug": "gen3",
+			"full": "HoloFantasy"
+		},
+		"outfits": ["Original", "Dragon Onesie"]
+	},
+	"kanata": {
+		"fullname": "Amane Kanata",
+		"weapon": "Angel",
+		"special": "Angel",
+		"skills": ["Angel", "Muscle", "Gorilla"],
+		"generation": {
+			"slug": "gen4",
+			"full": "HoloForce"
+		},
+		"outfits": ["Original", "Third 2D"]
+	},
+	"towa": {
+		"fullname": "Tokoyami Towa",
+		"weapon": "Devil",
+		"special": "Devil",
+		"skills": ["Devil", "Angel", "TMT"],
+		"generation": {
+			"slug": "gen4",
+			"full": "HoloForce"
+		},
+		"outfits": ["Original", "Casual"]
+	},
+	"watame": {
+		"fullname": "Tsunomaki Watame",
+		"weapon": "Watame",
+		"special": "Watame",
+		"skills": ["Sheep", "Song", "Dojo"],
+		"generation": {
+			"slug": "gen4",
+			"full": "HoloForce"
+		},
+		"outfits": ["Original", "Casual"]
+	},
+	"luna": {
+		"fullname": "Himemori Luna",
+		"weapon": "Princess",
+		"special": "Princess",
+		"skills": ["Princess", "Cute Is Justice", "Naaaaaaaaaa"],
+		"generation": {
+			"slug": "gen4",
+			"full": "HoloForce"
+		},
+		"outfits": ["Original", "Starry Night"]
+	},
+	"moona": {
+		"fullname": "Moona Hoshinova",
+		"weapon": "Moon",
+		"special": "Moona",
+		"skills": ["Moon", "Hoshinova", "President"],
+		"generation": {
+			"slug": "id1",
+			"full": "Area 15"
+		},
+		"outfits": ["Original", "Traditional"]
+	},
+	"risu": {
+		"fullname": "Ayunda Risu",
+		"weapon": "Squirrel",
+		"special": "Risu",
+		"skills": ["Squirrel", "Song", "Nut"],
+		"generation": {
+			"slug": "id1",
+			"full": "Area 15"
+		},
+		"outfits": ["Original", "Traditional"]
+	},
+	"iofi": {
+		"fullname": "Airani Iofifteen",
+		"weapon": "Iofi",
+		"special": "Iofi",
+		"skills": ["Artist", "Alien", "Iofy"],
+		"generation": {
+			"slug": "id1",
+			"full": "Area 15"
+		},
+		"outfits": ["Original", "Traditional"]
+	},
+	"ollie": {
+		"fullname": "Kureiji Ollie",
+		"weapon": "Zombie",
+		"special": "Ollie",
+		"skills": ["Zombie", "Korone's Friend", "Chaos"],
+		"generation": {
+			"slug": "id2",
+			"full": "Holoro"
+		},
+		"outfits": ["Original", "Traditional"]
+	},
+	"reine": {
+		"fullname": "Pavolia Reine",
+		"weapon": "Peacock",
+		"special": "Reine",
+		"skills": ["Peacock", "Princess", "Dance"],
+		"generation": {
+			"slug": "id2",
+			"full": "Holoro"
+		},
+		"outfits": ["Original", "Casual"]
+	},
+	"anya": {
+		"fullname": "Anya Melfissa",
+		"weapon": "Blade",
+		"special": "Anya",
+		"skills": ["Katana", "Melfissa", "Gamer"],
+		"generation": {
+			"slug": "id2",
+			"full": "Holoro"
+		},
+		"outfits": ["Original", "Casual"]
+	},
+	"kobo": {
+		"fullname": "Kobo Kanaeru",
+		"weapon": "Rain",
+		"special": "Kobo",
+		"skills": ["Rain", "Child", "Idol"],
+		"generation": {
+			"slug": "id3",
+			"full": "Holoh3ro"
+		},
+		"outfits": ["Original", "Traditional"]
+	},
+	"kaela": {
+		"fullname": "Kaela Kovalskia",
+		"weapon": "Hammer",
+		"special": "Kaela",
+		"skills": ["Penguin", "Blacksmith", "Grind"],
+		"generation": {
+			"slug": "id3",
+			"full": "Holoh3ro"
+		},
+		"outfits": ["Original", "Traditional"]
+	},
+	"zeta": {
+		"fullname": "Vestia Zeta",
+		"weapon": "Secret",
+		"special": "Zeta",
+		"skills": ["Secret", "Spy", "Cat"],
+		"generation": {
+			"slug": "id3",
+			"full": "Holoh3ro"
+		},
+		"outfits": ["Original", "Batik"]
+	}
+}
