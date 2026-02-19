@@ -1,9 +1,28 @@
-# HoloCureSaveEditor
 
+<h1 align="center"> <img src='https://nnotwen.github.io/HoloCureSaveEditor/favicons/icon-256.png' height='28'> HoloCure Save Editor </h1>
+
+<div align="center">
+
+[![built with love](http://forthebadge.com/images/badges/built-with-love.svg)](http://forthebadge.com/)
+[![60 percent of the time works every time](https://forthebadge.com/images/badges/60-percent-of-the-time-works-every-time.svg)](https://forthebadge.com)
+
+</div>
+
+<div align="center">
+  
+[![HoloCure](https://img.shields.io/badge/Game-HoloCure-ff69b4)](https://store.steampowered.com/app/2420510/HoloCure/)
+[![Editor](https://img.shields.io/badge/Tool-Save%20Editor-orange)](https://github.com/search?q=Save+editor&type=repositories)
+[![Platform](https://img.shields.io/badge/Platform-Windows-blue)](https://github.com/search?q=Windows&type=repositories)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
-[![Made with Love](https://img.shields.io/badge/Made%20with-Love-red.svg)](https://github.com)
+[![Build Status](https://github.com/nnotwen/HoloCureSaveEditor/actions/workflows/pages.yml/badge.svg)](https://github.com/nnotwen/HoloCureSaveEditor/actions/workflows/pages.yml)
+[![Known Vulnerabilities](https://snyk.io/test/github/nnotwen/HoloCureSaveEditor/badge.svg)](https://snyk.io/test/github/nnotwen/HoloCureSaveEditor)
+[![Maintenance](https://img.shields.io/badge/Maintained%3F-yes-green.svg)](https://github.com/nnotwen/HoloCureSaveEditor/graphs/commit-activity)
+[![GitHub last commit](https://img.shields.io/github/last-commit/nnotwen/HoloCureSaveEditor)](https://github.com/nnotwen/HoloCureSaveEditor/commits/main)
+[![GitHub code size](https://img.shields.io/github/languages/code-size/nnotwen/HoloCureSaveEditor)](https://github.com/nnotwen/HoloCureSaveEditor)
+[![GitHub top language](https://img.shields.io/github/languages/top/nnotwen/HoloCureSaveEditor)](https://github.com/nnotwen/HoloCureSaveEditor)
 
 A browser-based save file editor for HoloCure. Edit your game saves directly in your web browser with an intuitive interface.
+</div>
 
 ## Features
 
