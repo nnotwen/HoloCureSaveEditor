@@ -224,7 +224,7 @@ export default {
 					</div>
 				`);
 
-				const towerPreview = createTowerSnapshot(id, "/images/tower-full.png", {
+				const towerPreview = createTowerSnapshot(id, "./images/tower-full.png", {
 					initialX: lastXCoordinate - minX,
 					initialY: lastYCoordinate - minY - 13,
 				});
