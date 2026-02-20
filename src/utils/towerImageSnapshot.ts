@@ -92,7 +92,10 @@ export function createTowerSnapshot(parentId: string, imagePath: string, options
 		// Initial render
 		renderSnapshot(currentX, currentY);
 	};
-	originalImg.src = imagePath;
+
+	const basePath = window.location.pathname.split("/").slice(0, -1).join("/");
+	const cleanPath = imagePath.replace(/^\.\//, "");
+	originalImg.src = `${basePath}/${cleanPath}`;
 
 	function renderSnapshot(x: number, y: number) {
 		if (!ctx || !imageWidth || !imageHeight || !originalImg.complete) return;
