@@ -276,12 +276,12 @@ $(function () {
 				},
 			]);
 		});
+	});
 
-		$(".current-year").text(new Date().getFullYear());
-		$("[data-luxon-timestamp]").each((_, el) => {
-			const ms = $(el).data("luxon-timestamp") as number;
-			const date = DateTime.fromMillis(ms);
-			$(el).html(/*html*/ `${date.toLocaleString(DateTime.DATETIME_MED_WITH_WEEKDAY)}<span class="tw:mx-1">•</span>${date.toRelative()}`);
-		});
+	$(".current-year").text(new Date().getFullYear());
+	$("[data-luxon-timestamp]").each((_, el) => {
+		const ms = $(el).data("luxon-timestamp") as number;
+		const date = DateTime.fromMillis(ms);
+		$(el).html(/*html*/ `${date.toLocaleString(DateTime.DATETIME_MED_WITH_WEEKDAY)}<span class="tw:mx-1">•</span>${date.toRelative()}`);
 	});
 });
