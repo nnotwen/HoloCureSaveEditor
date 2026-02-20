@@ -603,7 +603,7 @@
 					<div class="col">
 						<div id="${w}" class="tw:h-46.25 tw:border tw:border-gray-600/70 tw:rounded-lg tw:overflow-hidden"></div>
 					</div>
-				`);const x=Rv(w,"/images/tower-full.png",{initialX:m-74,initialY:b-811-13});continue}if(Array.isArray(r)&&r.length==2){for(const[s,l]of Object.entries(r)){const c={label:`${t}.${s}`,defaultValue:l,wrapperClassName:"col-12 col-sm-6 col-md-4"};Ge('[data-progresstype="tower"]',c,function(f){e[t][parseInt(s)]=f})}continue}C('[data-progresstype="tower"]').append(`
+				`);const x=Rv(w,"./images/tower-full.png",{initialX:m-74,initialY:b-811-13});continue}if(Array.isArray(r)&&r.length==2){for(const[s,l]of Object.entries(r)){const c={label:`${t}.${s}`,defaultValue:l,wrapperClassName:"col-12 col-sm-6 col-md-4"};Ge('[data-progresstype="tower"]',c,function(f){e[t][parseInt(s)]=f})}continue}C('[data-progresstype="tower"]').append(`
 				<div class="col-12 col-sm-6 col-md-4">
 					<div class="tw:bg-gray-950 tw:border tw:border-gray-500 tw:h-full tw:opacity-50 tw:p-2 tw:rounded-lg">
 						<div class="tw:text-sm tw:text-gray-500">${t} - Unsupported</div>
