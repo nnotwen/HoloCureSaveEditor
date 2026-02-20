@@ -2,6 +2,8 @@ import $ from "jquery";
 import { HoloCureSaveData } from "../types/savedata";
 import { input, InputOptions, switchInput, SwitchOptions, tagSelect, TagSelectOptions } from "../components/forms";
 import toast from "../components/toast";
+import { generateUniqueId } from "../utils/generateUniqueId";
+import { createTowerSnapshot } from "../utils/towerImageSnapshot";
 
 // This should be imported so that there is only one reference
 const stages = [
@@ -73,7 +75,7 @@ export default {
 						</span>
 					</h5>
                     <p class="tw:text-sm tw:text-gray-400 tw:ps-2">
-						I still don't know what each variable does. For now, you're free to experiment with values, but please proceed with caution.
+						I still don't know what some variable does. For now, you're free to experiment with values, but please proceed with caution.
 					</p>
 					<div data-progresstype="tower" class="row g-2"></div>
                 </div>
@@ -136,12 +138,18 @@ export default {
 		})();
 
 		// Tower progression
-		for (const slug of ["towerJumps", "towerFalls", "towerlastPos", "towerCheckPoint", "towerCoins", "towerFlags", "towerSave", "towerTime"] as const) {
+		for (const slug of ["towerlastPos", "towerCheckPoint", "towerJumps", "towerFalls", "towerCoins", "towerFlags", "towerSave", "towerTime"] as const) {
 			const value = data[slug];
 
 			if (typeof value === "number") {
+				const labels = {
+					towerJumps: "Current Jumps",
+					towerFalls: "Current Falls",
+					towerFlags: "Checkpoint Used",
+				};
+
 				const options: InputOptions = {
-					label: slug,
+					label: (labels as any)[slug] ?? slug,
 					defaultValue: value,
 					wrapperClassName: "col-12 col-sm-6 col-md-4",
 				};
@@ -154,8 +162,8 @@ export default {
 
 			if (typeof value === "boolean") {
 				const options: SwitchOptions = {
-					heading: slug,
-					subtext: typeof value,
+					heading: "Current state saved",
+					subtext: "Turning this off will reset progress",
 					defaultValue: value,
 					wrapperClassName: "col-12 col-sm-6 col-md-4",
 				};
@@ -163,6 +171,64 @@ export default {
 				switchInput('[data-progresstype="tower"]', options, function (val) {
 					(data[slug] as any) = val;
 				});
+				continue;
+			}
+
+			if (slug === "towerlastPos" || slug === "towerCheckPoint") {
+				const minX = 74,
+					maxX = 567,
+					minY = 811,
+					maxY = 15840;
+
+				let lastXCoordinate: number = data[slug][0] || minX + 38,
+					lastYCoordinate: number = data[slug][1] || maxY;
+				const id = generateUniqueId();
+
+				$("[data-progresstype='tower']").append(/*html*/ `
+					<div class="col-12 col-md-6">
+						<div class="tw:p-2 tw:border tw:border-gray-700/70 tw:bg-gray-950/30 tw:rounded-lg">
+							<div data-label-slug="${slug}" class="tw:ps-2 tw:font-semibold tw:tracking-tight tw:text-lg font-monocraft"></div>
+							<div data-desc-slug="${slug}" class="tw:ps-2 tw:mb-4 tw:tracking-tight tw:text-sm tw:text-gray-400"></div>
+							<div data-input-slug="${slug}" class="row g-1"></div>
+						</div>
+					</div>
+				`);
+
+				$(`[data-label-slug="${slug}"]`).text(slug === "towerlastPos" ? "Tower Last Position" : "Tower Checkpoint");
+				$(`[data-desc-slug="${slug}"]`).text(
+					slug === "towerlastPos"
+						? "The position of your character when you enter the tower."
+						: "Position to where you can warp by pressing the Ctrl key.",
+				);
+
+				data[slug].map((c, i) => {
+					const options: InputOptions = {
+						label: i === 0 ? "X coordinate" : "Y coordinate",
+						defaultValue: i === 0 ? lastXCoordinate : lastYCoordinate,
+						wrapperClassName: "col-6",
+						diff: false,
+						max: i === 0 ? maxX : maxY,
+					};
+
+					input(`[data-input-slug="${slug}"]`, options, function (val) {
+						(data[slug][i] as any) = val;
+						if (i === 0) lastXCoordinate = val === 0 ? minX : val;
+						if (i === 1) lastYCoordinate = val === 0 ? minY : val;
+						towerPreview.setCoordinates(lastXCoordinate - minX, lastYCoordinate - minY - 13);
+					});
+				});
+
+				$(`[data-input-slug="${slug}"]`).append(/*html*/ `
+					<div class="col">
+						<div id="${id}" class="tw:h-46.25 tw:border tw:border-gray-600/70 tw:rounded-lg tw:overflow-hidden"></div>
+					</div>
+				`);
+
+				const towerPreview = createTowerSnapshot(id, "/images/tower-full.png", {
+					initialX: lastXCoordinate - minX,
+					initialY: lastYCoordinate - minY - 13,
+				});
+
 				continue;
 			}
 

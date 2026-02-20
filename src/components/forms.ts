@@ -11,6 +11,8 @@ export interface InputOptions {
 	iconPath?: string;
 	wrapperClassName?: string;
 	max?: number;
+	min?: number;
+	diff?: boolean;
 }
 
 /**
@@ -54,26 +56,29 @@ export function input(selector: string, options: InputOptions, onInput: (val: nu
 			const def = $this.data("default-val");
 
 			if (isNaN(val) || !isFinite(val)) return $this.val(def);
+			if (options.min && val < options.min) return $this.val(options.min).trigger("input");
 			if (options.max && val > options.max) return $this.val(options.max).trigger("input");
 			if (val > Number.MAX_SAFE_INTEGER) return $this.val(Number.MAX_SAFE_INTEGER).trigger("input");
 
 			onInput(val);
 
-			if (def !== val) {
-				const prefix = val > def ? "+" : "-";
-				const formatted = Intl.NumberFormat("en-US", {
-					notation: "compact",
-					compactDisplay: "short",
-					maximumFractionDigits: 1,
-				}).format(Math.abs(val - def));
+			if (options.diff !== false) {
+				if (def !== val) {
+					const prefix = val > def ? "+" : "-";
+					const formatted = Intl.NumberFormat("en-US", {
+						notation: "compact",
+						compactDisplay: "short",
+						maximumFractionDigits: 1,
+					}).format(Math.abs(val - def));
 
-				$(`[data-valuechange-for="${id}"]`)
-					.css("left", `calc(0.25rem * 12 + ${($this.val() as string).length * 0.87}em)`)
-					.text(`(${prefix}${val.toFixed().length < 8 ? Math.abs(val - def).toLocaleString() : formatted})`)
-					.addClass(prefix === "+" ? "tw:text-green-300/70" : "tw:text-red-300/70")
-					.removeClass(`tw:hidden ${prefix === "+" ? "tw:text-red-300/70" : "tw:text-green-300/70"}`);
-			} else {
-				$(`[data-valuechange-for="${id}"]`).addClass("tw:hidden");
+					$(`[data-valuechange-for="${id}"]`)
+						.css("left", `calc(0.25rem * 12 + ${($this.val() as string).length * 0.87}em)`)
+						.text(`(${prefix}${val.toFixed().length < 8 ? Math.abs(val - def).toLocaleString() : formatted})`)
+						.addClass(prefix === "+" ? "tw:text-green-300/70" : "tw:text-red-300/70")
+						.removeClass(`tw:hidden ${prefix === "+" ? "tw:text-red-300/70" : "tw:text-green-300/70"}`);
+				} else {
+					$(`[data-valuechange-for="${id}"]`).addClass("tw:hidden");
+				}
 			}
 		})
 		.on("blur", function () {
