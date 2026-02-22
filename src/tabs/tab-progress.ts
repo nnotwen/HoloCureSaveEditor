@@ -1,6 +1,6 @@
 import $ from "jquery";
 import { HoloCureSaveData } from "../types/savedata";
-import { input, InputOptions, switchInput, SwitchOptions, tagSelect, TagSelectOptions } from "../components/forms";
+import { input, InputOptions, range, RangeOptions, switchInput, SwitchOptions, tagSelect, TagSelectOptions } from "../components/forms";
 import toast from "../components/toast";
 import { generateUniqueId } from "../utils/generateUniqueId";
 import { createTowerSnapshot } from "../utils/towerImageSnapshot";
@@ -232,6 +232,23 @@ export default {
 				continue;
 			}
 
+			if (slug === "towerCoins") {
+				const options: RangeOptions = {
+					label: "Coins Collected",
+					initlalValue: data[slug].length,
+					min: 0,
+					max: 42, // Total of 420 coins
+					steps: 1,
+					wrapperClassName: "col-12 col-sm-6 col-md-4",
+				};
+
+				range('[data-progresstype="tower"]', options, function (val) {
+					data[slug] = Array.from({ length: val }, (_, i) => i);
+				});
+
+				continue;
+			}
+
 			if (Array.isArray(value) && value.length == 2) {
 				for (const [idx, innerVal] of Object.entries(value)) {
 					const options: InputOptions = {
@@ -250,7 +267,7 @@ export default {
 
 			$('[data-progresstype="tower"]').append(/*html*/ `
 				<div class="col-12 col-sm-6 col-md-4">
-					<div class="tw:bg-gray-950 tw:border tw:border-gray-500 tw:h-full tw:opacity-50 tw:p-2 tw:rounded-lg">
+					<div class="tw:bg-gray-950 tw:border tw:border-gray-500 tw:h-full tw:opacity-50 tw:p-2 tw:rounded-md">
 						<div class="tw:text-sm tw:text-gray-500">${slug} - Unsupported</div>
 						<div>${JSON.stringify(data[slug])}</div>
 					</div>
