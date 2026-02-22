@@ -5,6 +5,47 @@ import { HoloCureSaveData } from "../types/savedata";
 import { TomOption, TomSettings } from "tom-select/dist/cjs/types";
 import TomSelect from "tom-select";
 
+export interface RangeOptions {
+	label: string;
+	initlalValue: number;
+	min?: number;
+	max?: number;
+	steps?: number;
+	disabled?: boolean;
+	wrapperClassName?: string;
+}
+
+export function range(selector: string, options: RangeOptions, onChange: (val: number) => void) {
+	const id = generateUniqueId();
+	const $main = $(selector);
+
+	if ($main.length !== 1) throw new Error(`Unable to find unique element with selector "${selector}"`);
+
+	const html = /*html*/ `
+		<div class="tw:h-full tw:p-2 tw:pb-1 tw:border tw:border-[rgb(73,80,87)] tw:rounded-md tw:bg-gray-950/70 tw:flex tw:focus-within:border-[rgb(134,183,254)] tw:focus-within:shadow-[0_0_0_.25rem_rgba(13,110,253,.25)] tw:has-disabled:opacity-50">
+			<div class="tw:flex tw:flex-col tw:ms-2 tw:flex-1 tw:flex-nowrap">
+				<label for="${id}" class="form-label tw:select-none tw:text-sm tw:mb-0! tw:text-[rgba(222,226,230,0.65)]">${options.label}</label>
+				<input id="${id}" type="range" class="form-range">
+			</div>	
+			<div class="tw:w-10 tw:ps-2 tw:flex tw:justify-center tw:items-center">
+				<output for="${id}" class="font-monocraft">${options.initlalValue}</output>
+			</div>
+		</div>`;
+
+	$main.append(options.wrapperClassName ? /*html*/ `<div class="${options.wrapperClassName}">${html}</div>` : html);
+
+	if (options.min) $(`#${id}`).attr("min", options.min);
+	if (options.max) $(`#${id}`).attr("max", options.max);
+	if (options.steps) $(`#${id}`).attr("steps", options.steps);
+	if (options.disabled) $(`#${id}`).prop("disabled", true);
+	if (typeof options.initlalValue === "number") $(`#${id}`).val(options.initlalValue);
+
+	$(`#${id}`).on("input", function () {
+		onChange(parseInt($(this).val() as string));
+		$(`output[for="${id}"]`).text($(this).val() as string);
+	});
+}
+
 export interface InputOptions {
 	label: string;
 	defaultValue: number;
@@ -36,7 +77,7 @@ export function input(selector: string, options: InputOptions, onInput: (val: nu
 
 	const html = /*html*/ `
         <div class="form-floating">
-            <input type="number" class="form-control font-monocraft ${options.iconPath ? "tw:ps-10!" : ""} tw:pe-10! tw:bg-gray-950/70!" data-default-val="${options.defaultValue}" value="${options.defaultValue}" id="${id}" placeholder="floating-label">
+            <input type="number" class="form-control font-monocraft tw:min-h-[3.9rem]! ${options.iconPath ? "tw:ps-10!" : ""} tw:pe-10! tw:bg-gray-950/70!" data-default-val="${options.defaultValue}" value="${options.defaultValue}" id="${id}" placeholder="floating-label">
             <label for="${id}">${options.label}</label>
             ${options.iconPath ? iconHtml : ""}
             <div class="tw:absolute tw:right-3 tw:top-1/2 tw:-translate-y-1/2 tw:w-8 tw:h-8 tw:flex tw:justify-center tw:items-center tw:cursor-pointer tw:rounded-full tw:bg-transparent tw:hover:bg-white/15 tw:transition-opacity tw:duration-200" data-resources-action="reset" data-action-for="${id}">
@@ -98,7 +139,7 @@ export function input(selector: string, options: InputOptions, onInput: (val: nu
 	new Tooltip(`[data-resources-action='reset'][data-action-for='${id}']`, {
 		animation: true,
 		title: "Reset Value",
-		customClass: "tw:bg-gray-950 tw:border tw:border-gray-700/80 tw:rounded-lg",
+		customClass: "tw:bg-gray-950 tw:border tw:border-gray-700/80 tw:rounded-md",
 		placement: "top",
 		trigger: "hover",
 	});
@@ -122,13 +163,13 @@ export function switchInput(selector: string, options: SwitchOptions, onChange: 
 	if ($main.length !== 1) throw new Error(`Unable to find unique element with selector "${selector}"`);
 
 	const html = /*html*/ `
-		<div data-container-for="${id}" class="tw:flex tw:gap-2 tw:p-2 tw:rounded-lg tw:border tw:border-gray-700/70 tw:bg-gray-950/70 tw:h-full tw:cursor-pointer">
+		<div data-container-for="${id}" tabindex="-1" class="tw:flex tw:gap-2 tw:p-2 tw:rounded-md tw:border tw:border-[rgb(73,80,87)] tw:bg-gray-950/70 tw:h-full tw:cursor-pointer tw:focus-within:border-[rgb(134,183,254)] tw:focus-within:shadow-[0_0_0_.25rem_rgba(13,110,253,.25)]">
 			<div class="form-check tw:ps-0! form-switch tw:flex! tw:justify-between! tw:mb-3 tw:flex-1">
-				<div class="tw:flex tw:flex-col tw:ms-2">
+				<div class="tw:flex tw:flex-col tw:ms-2 tw:select-none">
 					<div class="font-monocraft tw:font-bold tw:tracking-tight tw:text-sm">${options.heading}</div>
 					<span class="tw:text-white/70 tw:text-xs">${options.subtext}</span>
 				</div>
-				<input class="form-check-input tw:ms-0! tw:float-none! tw:cursor-pointer" type="checkbox" value="" id="${id}" data-default-val="${options.defaultValue}" switch>
+				<input class="form-check-input tw:ms-0! tw:float-none! tw:cursor-pointer tw:focus:shadow-[unset]!" type="checkbox" value="" id="${id}" data-default-val="${options.defaultValue}" switch>
 			</div>
 		</div>`;
 
@@ -148,8 +189,7 @@ export function switchInput(selector: string, options: SwitchOptions, onChange: 
 
 		e.stopImmediatePropagation();
 		const $target = $(`#${id}`);
-		$target.prop("checked", !$target.prop("checked"));
-		$target.trigger("change");
+		$target.prop("checked", !$target.prop("checked")).trigger("focus");
 	});
 
 	return {
@@ -173,18 +213,18 @@ export function richSwitchInput(selector: string, options: RichSwitchOptions, on
 	if ($main.length !== 1) throw new Error(`Unable to find unique element with selector "${selector}"`);
 
 	const html = /*html*/ `
-		<div data-container-for="${id}" class="tw:flex tw:gap-2 tw:p-3 tw:rounded-lg tw:border tw:border-gray-700/70 tw:bg-gray-950/70 tw:h-full tw:has-[input:disabled]:opacity-50 tw:has-[input:disabled]:pointer-events-none tw:cursor-pointer">
+		<div data-container-for="${id}" tabindex="-1" class="tw:flex tw:gap-2 tw:p-3 tw:rounded-md tw:border tw:border-[rgb(73,80,87)] tw:bg-gray-950/70 tw:h-full tw:has-[input:disabled]:opacity-50 tw:has-[input:disabled]:pointer-events-none tw:cursor-pointer tw:focus-within:border-[rgb(134,183,254)] tw:focus-within:shadow-[0_0_0_.25rem_rgba(13,110,253,.25)]">
 			<div class="form-check tw:ps-0! form-switch tw:flex! tw:justify-between! tw:mb-3 tw:flex-1 tw:[&:has(input:not(:checked))_img]:grayscale">
 				<div class="tw:flex tw:gap-3">
 					<div class="tw:max-w-12 tw:shrink-0">
 						<img width="48" src="${options.iconPath}" alt="${options.heading}">
 					</div>
-					<div class="tw:flex tw:flex-col">
+					<div class="tw:flex tw:flex-col tw:select-none">
 						<div data-rs-type="heading" class="font-monocraft tw:font-bold tw:tracking-tight tw:text-sm">${options.heading}</div>
 						<span data-rs-type="subtext" class="tw:text-white/70 tw:text-xs">${options.subtext}</span>
 					</div>
 				</div>
-				<input class="form-check-input tw:ms-0! tw:float-none! tw:cursor-pointer" type="checkbox" value="" id="${id}" data-default-val="${options.defaultValue}" switch>
+				<input class="form-check-input tw:ms-0! tw:float-none! tw:cursor-pointer  tw:focus:shadow-[unset]!" type="checkbox" value="" id="${id}" data-default-val="${options.defaultValue}" switch>
 			</div>
 		</div>`;
 
@@ -201,8 +241,7 @@ export function richSwitchInput(selector: string, options: RichSwitchOptions, on
 
 		e.stopImmediatePropagation();
 		const $target = $(`#${id}`);
-		$target.prop("checked", !$target.prop("checked"));
-		$target.trigger("change");
+		$target.prop("checked", !$target.prop("checked")).trigger("focus").trigger("change");
 	});
 
 	return {
@@ -230,7 +269,7 @@ export function tagSelect(selector: string, options: TagSelectOptions, onChange:
 	if ($main.length !== 1) throw new Error(`Unable to find unique element with selector "${selector}"`);
 
 	const html = /*html*/ `
-		<div class="form-group tw:h-full tw:rounded-lg tw:p-3 tw:border tw:border-gray-700/70 tw:bg-gray-950/70 tw:has-[.focus]:shadow-[0_0_0_0.25rem_rgba(13,110,253,0.25)]">
+		<div class="form-group tw:h-full tw:rounded-md tw:p-3 tw:border tw:border-gray-700/70 tw:bg-gray-950/70 tw:has-[.focus]:shadow-[0_0_0_0.25rem_rgba(13,110,253,0.25)]">
 			<label for="${id}" class="font-monocraft tw:font-semibold tw:tracking-tight tw:mb-2">${options.label}</label>
 			<select name="${options.label}" id="${id}"></select>
 		</div>
@@ -331,7 +370,7 @@ export function characterFormGroup(
 	});
 
 	const html = /*html*/ `
-		<div data-entry-for="${options.key}" class="tw:flex tw:gap-3 tw:flex-col tw:rounded-lg tw:border tw:border-gray-700/70 tw:bg-gray-950/70 tw:p-3 tw:h-full">
+		<div data-entry-for="${options.key}" class="tw:flex tw:gap-3 tw:flex-col tw:rounded-md tw:border tw:border-gray-700/70 tw:bg-gray-950/70 tw:p-3 tw:h-full">
 			<div data-entry-type="basic" class="form-check tw:ps-0! form-switch tw:flex! tw:justify-between! tw:mb-3">
 				<div class="tw:flex tw:gap-2">
 					<div class="tw:w-12 tw:shrink-0">
@@ -350,7 +389,7 @@ export function characterFormGroup(
 					<div class="col"><div class="tw:flex tw:gap-2" data-character-container="grank"></div></div>
 					<div class="col"><div class="tw:flex tw:gap-2" data-character-container="trophy"></div></div>
 				</div>
-				<div class="tw:flex tw:flex-col tw:flex-1 tw:bg-gray-950/70 tw:border tw:border-gray-700 tw:rounded-lg tw:p-2">
+				<div class="tw:flex tw:flex-col tw:flex-1 tw:bg-gray-950/70 tw:border tw:border-gray-700 tw:rounded-md tw:p-2">
 					<div class="font-monocraft tw:font-bold tw:tracking-tight tw:text-sm tw:text-center">Outfits</div>
 					<div class="tw:flex tw:justify-center tw:flex-wrap tw:items-end tw:flex-1 tw:gap-2">${outfit.join("")}</div>
 				</div>
