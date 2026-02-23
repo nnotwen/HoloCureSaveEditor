@@ -269,7 +269,7 @@ export function tagSelect(selector: string, options: TagSelectOptions, onChange:
 	if ($main.length !== 1) throw new Error(`Unable to find unique element with selector "${selector}"`);
 
 	const html = /*html*/ `
-		<div class="form-group tw:h-full tw:rounded-md tw:p-3 tw:border tw:border-gray-700/70 tw:bg-gray-950/70 tw:has-[.focus]:shadow-[0_0_0_0.25rem_rgba(13,110,253,0.25)]">
+		<div class="form-group tw:h-full tw:rounded-md tw:p-3 tw:border tw:border-gray-700/70 tw:bg-gray-950/70 tw:focus-within:border-[rgb(134,183,254)] tw:focus-within:shadow-[0_0_0_.25rem_rgba(13,110,253,.25)]">
 			<label for="${id}" class="font-monocraft tw:font-semibold tw:tracking-tight tw:mb-2">${options.label}</label>
 			<select name="${options.label}" id="${id}"></select>
 		</div>
