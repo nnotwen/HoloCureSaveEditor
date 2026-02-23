@@ -330,7 +330,7 @@
 				<input class="form-check-input tw:ms-0! tw:float-none! tw:cursor-pointer  tw:focus:shadow-[unset]!" type="checkbox" value="" id="${r}" data-default-val="${e.defaultValue}" switch>
 			</div>
 		</div>`;return s.append(e.wrapperClassName?`<div class="${e.wrapperClassName}">${l}</div>`:l),C(`#${r}`).prop("checked",e.defaultValue).prop("disabled",e.disabled),C(`#${r}`).on("change",function(c){c.stopImmediatePropagation(),t(C(this).prop("checked"))}),C(`[data-container-for="${r}"]`).on("click",function(c){if(C(c.target).is(`#${r}`)||C(c.target).closest(`#${r}`).length)return;c.stopImmediatePropagation();const f=C(`#${r}`);f.prop("checked",!f.prop("checked")).trigger("focus").trigger("change")}),{id:r,$:()=>C(`#${r}`)}}function _v(n,e,t){const r=ie(),s=C(n);if(s.length!==1)throw new Error(`Unable to find unique element with selector "${n}"`);const l=`
-		<div class="form-group tw:h-full tw:rounded-md tw:p-3 tw:border tw:border-gray-700/70 tw:bg-gray-950/70 tw:has-[.focus]:shadow-[0_0_0_0.25rem_rgba(13,110,253,0.25)]">
+		<div class="form-group tw:h-full tw:rounded-md tw:p-3 tw:border tw:border-gray-700/70 tw:bg-gray-950/70 tw:focus-within:border-[rgb(134,183,254)] tw:focus-within:shadow-[0_0_0_.25rem_rgba(13,110,253,.25)]">
 			<label for="${r}" class="font-monocraft tw:font-semibold tw:tracking-tight tw:mb-2">${e.label}</label>
 			<select name="${e.label}" id="${r}"></select>
 		</div>
