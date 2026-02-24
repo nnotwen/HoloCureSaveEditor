@@ -454,3 +454,66 @@ export function characterFormGroup(
 		$: () => $(`#${id}`),
 	};
 }
+
+export interface DurationInputOptions {
+	label: string;
+	exclude?: ("HH" | "MM" | "SS" | "ss")[];
+	wrapperClassName?: string;
+	defaultValues: { HH?: number; MM?: number; SS?: number; ss?: number };
+}
+
+export function durationInput(
+	selector: string,
+	options: DurationInputOptions,
+	onChange: ({ type, val }: { type: "HH" | "MM" | "SS" | "ss"; val: number }) => void,
+) {
+	const id = generateUniqueId();
+	const $main = $(selector);
+	if ($main.length !== 1) throw new Error(`Unable to find unique element with selector "${selector}"`);
+
+	const html = /*html*/ `
+		<div class="tw:flex tw:flex-col tw:border tw:border-[rgb(73,80,87)] tw:bg-gray-950/70 tw:rounded-md tw:p-3 tw:py-2 tw:h-full tw:focus-within:border-[rgb(134,183,254)] tw:focus-within:shadow-[0_0_0_.25rem_rgba(13,110,253,.25)] tw:has-disabled:opacity-50">
+			<span class="tw:text-sm tw:text-[rgba(222,226,230,0.65)]">${options.label}</span>
+			<div id="${id}" class="tw:flex font-monocraft">
+				<input type="number" data-type="HH" class="tw:w-8 tw:text-center tw:focus-within:outline-0" data-numsys="decimal" />
+				<span>:</span>
+				<input type="number" data-type="MM" class="tw:w-8 tw:text-center tw:focus-within:outline-0" data-numsys="sexagesimal" max="60" />
+				<span>:</span>
+				<input type="number" data-type="SS" class="tw:w-8 tw:text-center tw:focus-within:outline-0" data-numsys="sexagesimal" max="60" />
+				<span>.</span>
+				<input type="number" data-type="ss" class="tw:w-8 tw:text-center tw:focus-within:outline-0" data-numsys="sexagesimal" max="60" />
+			</div>
+		</div>
+	`;
+
+	$main.append(options.wrapperClassName ? /*html*/ `<div class="${options.wrapperClassName}">${html}</div>` : html);
+
+	// Add values
+	Object.entries(options.defaultValues).forEach(([type, val]) => $(`#${id} [data-type="${type}"]`).val(val.toString().padStart(2, "0")));
+
+	// Remove excluded types
+	if (options.exclude?.length) $(options.exclude.map((type) => `#${id} [data-type="${type}"]`).join(", ")).remove();
+
+	$(`#${id} input`)
+		.on("change", function (e) {
+			const $this = $(this);
+			if ($this.data("numsys") === "sexagesimal" && parseInt($this.val() as string) >= $this.prop("max")) {
+				const $prev = $this.prevAll("input").first();
+				const value = (parseInt($prev.val() as string) + 1).toString().padStart(2, "0");
+				$prev.val(value).trigger("change").trigger("blur");
+				return $this.val(0).trigger("change");
+			}
+
+			if (parseInt(($this.val() || "0") as string) < 0) {
+				const $prev = $this.prevAll("input").first();
+				const value = (parseInt($prev.val() as string) - 1).toString().padStart(2, "0");
+				$prev.val(value).trigger("change").trigger("blur");
+				return $this.val(59).trigger("change");
+			}
+
+			onChange({ type: $this.data("type"), val: parseInt($this.val() as string) });
+		})
+		.on("blur", function () {
+			$(this).val(($(this).val() as string).padStart(2, "0"));
+		});
+}
