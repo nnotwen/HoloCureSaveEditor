@@ -141,8 +141,11 @@ export default {
 				};
 
 				tagSelect('[data-progresstype="completed-stages"]', options, function (val) {
-					const stageData = data.completedStages.find((x) => x[0] === stage.slug);
-					if (!stageData) return toast.error(`Unable to supply data to SaveData.completedStages: Missing slug ${stage.slug} at index 0.`);
+					let stageData = data.completedStages.find((x) => x[0] === stage.slug);
+					if (!stageData) {
+						data.completedStages.push([stage.slug, []]);
+						stageData = data.completedStages.find((x) => x[0] === stage.slug)!;
+					}
 					stageData[1] = val;
 				});
 			}
