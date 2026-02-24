@@ -1,6 +1,17 @@
 import $ from "jquery";
 import { HoloCureSaveData } from "../types/savedata";
-import { input, InputOptions, range, RangeOptions, switchInput, SwitchOptions, tagSelect, TagSelectOptions } from "../components/forms";
+import {
+	durationInput,
+	DurationInputOptions,
+	input,
+	InputOptions,
+	range,
+	RangeOptions,
+	switchInput,
+	SwitchOptions,
+	tagSelect,
+	TagSelectOptions,
+} from "../components/forms";
 import toast from "../components/toast";
 import { generateUniqueId } from "../utils/generateUniqueId";
 import { createTowerSnapshot } from "../utils/towerImageSnapshot";
@@ -50,24 +61,24 @@ const statsProgression = [
 export default {
 	render(parentId: string, data: HoloCureSaveData) {
 		$(`#${parentId}`).html(/*html*/ `
-            <div class="tw:my-2">
+            <div class="tw:my-2 tw:space-y-6">
                 <h3 class="font-monocraft">Progress</h3>
-				<div class="tw:border tw:border-gray-700 tw:bg-gray-950/30 tw:p-2 tw:pt-3 tw:rounded-lg tw:my-6">
+				<div class="tw:border tw:border-gray-700 tw:bg-gray-950/30 tw:p-2 tw:pt-3 tw:rounded-lg">
                     <h5 class="font-monocraft tw:font-semibold tw:ps-2">HOLO HOUSE</h5>
                     <div data-progresstype="holo-house" class="row g-2"></div>
                 </div>
-				<div class="tw:border tw:border-gray-700 tw:bg-gray-950/30 tw:p-2 tw:pt-3 tw:rounded-lg tw:my-6">
+				<div class="tw:border tw:border-gray-700 tw:bg-gray-950/30 tw:p-2 tw:pt-3 tw:rounded-lg">
                     <h5 class="font-monocraft tw:font-semibold tw:ps-2">STATS PROGRESSION (SHOP)</h5>
                     <div data-progresstype="shop-stats" class="row g-2"></div>
                 </div>
-                <div class="tw:border tw:border-gray-700 tw:bg-gray-950/30 tw:p-2 tw:pt-3 tw:rounded-lg tw:my-6">
+                <div class="tw:border tw:border-gray-700 tw:bg-gray-950/30 tw:p-2 tw:pt-3 tw:rounded-lg">
                     <h5 class="font-monocraft tw:font-semibold tw:ps-2">COMPLETED STAGES</h5>
 					<p class="tw:text-sm tw:text-gray-400 tw:ps-2">
 						Adds list of characters that completed the following stages. Ensure that each clear from the character has at least the number of trophies (i.e. If ame is listed in STAGE 1, STAGE 2, and STAGE 3, she should at least have 3 Trophies in the Character editor tab), and that the added character is already unlocked.
 					</p>
                     <div data-progresstype="completed-stages" class="row g-2"></div>
                 </div>
-				<div class="tw:border tw:border-gray-700 tw:bg-gray-950/30 tw:p-2 tw:pt-3 tw:rounded-lg tw:my-6">
+				<div class="tw:border tw:border-gray-700 tw:bg-gray-950/30 tw:p-2 tw:pt-3 tw:rounded-lg">
                     <h5 class="font-monocraft tw:font-semibold tw:ps-2 tw:flex tw:items-center tw:gap-2">
 						TOWER OF SUFFERING
 						<span class="tw:text-xs! tw:font-sans tw:font-normal! tw:px-2 tw:py-0.5 tw:border tw:border-amber-700/70 tw:bg-amber-500/30 tw:text-amber-500 tw:rounded-full tw:inline-flex tw:items-center">
@@ -126,12 +137,15 @@ export default {
 					})),
 					items: data.completedStages.find((x) => x[0] === stage.slug)?.[1] ?? [],
 					tomSettings: { maxItems: null, create: false, placeholder: "Add a character...", hidePlaceholder: true },
-					wrapperClassName: "col-12 col-md-6",
+					wrapperClassName: "col-12",
 				};
 
 				tagSelect('[data-progresstype="completed-stages"]', options, function (val) {
-					const stageData = data.completedStages.find((x) => x[0] === stage.slug);
-					if (!stageData) return toast.error(`Unable to supply data to SaveData.completedStages: Missing slug ${stage.slug} at index 0.`);
+					let stageData = data.completedStages.find((x) => x[0] === stage.slug);
+					if (!stageData) {
+						data.completedStages.push([stage.slug, []]);
+						stageData = data.completedStages.find((x) => x[0] === stage.slug)!;
+					}
 					stageData[1] = val;
 				});
 			}
@@ -143,8 +157,8 @@ export default {
 
 			if (typeof value === "number") {
 				const labels = {
-					towerJumps: "Current Jumps",
-					towerFalls: "Current Falls",
+					towerJumps: "Total Jumps",
+					towerFalls: "Total Falls",
 					towerFlags: "Checkpoint Used",
 				};
 
@@ -265,14 +279,18 @@ export default {
 				continue;
 			}
 
-			$('[data-progresstype="tower"]').append(/*html*/ `
-				<div class="col-12 col-sm-6 col-md-4">
-					<div class="tw:bg-gray-950 tw:border tw:border-gray-500 tw:h-full tw:opacity-50 tw:p-2 tw:rounded-md">
-						<div class="tw:text-sm tw:text-gray-500">${slug} - Unsupported</div>
-						<div>${JSON.stringify(data[slug])}</div>
-					</div>
-				</div>
-			`);
+			if (slug === "towerTime") {
+				const [HH, MM, SS, ss] = data[slug];
+				const options: DurationInputOptions = {
+					label: "Elapsed Time",
+					wrapperClassName: "col=12 col-sm-6 col-md-4",
+					defaultValues: { HH, MM, SS, ss },
+				};
+
+				durationInput('[data-progresstype="tower"]', options, function ({ type, val }) {
+					data[slug][["HH", "MM", "SS", "ss"].indexOf(type)] = val;
+				});
+			}
 		}
 	},
 };
