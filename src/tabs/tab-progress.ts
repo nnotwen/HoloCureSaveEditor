@@ -137,7 +137,7 @@ export default {
 					})),
 					items: data.completedStages.find((x) => x[0] === stage.slug)?.[1] ?? [],
 					tomSettings: { maxItems: null, create: false, placeholder: "Add a character...", hidePlaceholder: true },
-					wrapperClassName: "col-12 col-md-6",
+					wrapperClassName: "col-12",
 				};
 
 				tagSelect('[data-progresstype="completed-stages"]', options, function (val) {
